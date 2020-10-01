@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+  
+
+  html,
+  body {
+    height: 100%;
+    background-color: #f3f2eb;
+    color:#535a5c;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 110%;
+  }
+  
+  #header {
+    width:100%;
+    height:calc(100vw * 0.44);
+    max-height:35vh;
+    background-image:url(/img/Teraband_Header_XL.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover; padding-top:5%;
+  }
+  
+  #header img {
+    width:50%;
+    max-width: 800px;
+    height:auto;
+  }
+  
+@media  (min-width: 1400px){
+  #header{
+    padding-top:2%;
+  }
+}
+
+  .navigation {
+    background-color: #6f1d45;
+  }
+  
+  .navbar .nav-item.nav-link,
+  .navbar .nav-item:focus.nav-link,
+  .navbar .nav-item:hover.nav-link {
+    color: white;
+    text-transform: uppercase;
+    font-size:80%;
+    letter-spacing: 0.2em;
+  }
+  
+  .navbar .navbar-toggler {
+    color: white;
+  }
+
+  a.nav-item:hover {
+    transition: 0.25s;
+    background-color: rgba(158, 158, 158, 0.164) ;
+  }
+  
+  @media (max-width: 992px) {
+    .nav-divider {
+      display:none;
+    }
+  }
+  
+  h1 {
+    margin-top:2em;
+    margin-bottom:1em;
+    padding-bottom:0.5em;
+    font-size:180%;
+    color:#535a5c;
+    text-align:center;
+    border-bottom: 4px dotted #6f1d45;
+  }
+  
+  h1.decent {
+    border-bottom: 4px dotted #645e37;
+  }
+  
+  h2 {
+    font-size:120%;
+    font-weight:bold;
+    margin-bottom:1em;
+  }
+  
+  hr {
+    margin-top:1em;
+    margin-bottom:1em;
+    font-size:180%;
+    border-bottom: 4px dotted #6f1d45;
+  }
+  
+  .btn-link-physiosa,
+  .btn-link-physiosa:hover,
+  .btn-link-physiosa:active {
+    color:#d50050 !important;
+  }
+  
+  .btn-accordion,
+  .btn-accordion:hover,
+  .btn-accordion:active {
+    color:#d50050 !important;
+  }
+  
+  table.werdegang td {
+    text-align: left;
+    vertical-align: top;
+    padding-bottom:10px
+  }
+  
+  table.werdegang td:first-child {
+    white-space: nowrap;
+    padding-right:10px
+  
+  }
+  
+  div.colpic_cover {
+    padding-top: 72%;
+    background-position:center;
+    background-size:cover;
+  }
+  
+  div.colpic_height {
+    padding-top:100%;
+    margin-bottom: 15px;
+    background-position:center top;
+    background-size: contain;
+    background-repeat:no-repeat;
+  }
+  
+  @media (min-width: 768px){
+    div.colpic_height {
+      padding-top: 137%;
+    }
+    #fixedbutton {
+      position: fixed;
+      bottom: 150px;
+      right: 5px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .colpic_height.julia {
+      margin-top:-80px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .colpic_height.julia {
+      margin-top:-120px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .colpic_height.julia {
+      margin-top:-180px;
+    }
+  }
+  
+  div.colpic_impressum {
+    margin-top:15px;
+    margin-bottom:15px;
+    padding-top:100%;
+    background-position:center;
+    background-size:cover;
+  }
+  
+  .btn-physiosa {
+    border-radius:24px;
+    background-color:#b5b98f;
+    color:#575025;
+    padding-left:40px;
+    padding-right:40px;
+  }
+  
+  .btn-accordion {
+    color:#535a5c;
+  }
+  
+  .accordion-content {
+    margin-bottom:1em;
+    padding-top:1em;
+    padding-bottom:1em;
+    padding-left:0;
+    padding-right:0;
+    border-bottom: 3px dotted #645e37;
+    border-top: 3px dotted #645e37;
+  }
+  
+  footer {
+    padding-top:20px;
+    background-color:#2c2a07;
+    color:white;
+  }
+  
+  footer a,
+  footer a:hover {
+    color:white;
+  }
+  
+  footer .headline {
+    color:#87855c;
+    font-weight:bold;
+  }
+  
+  .btn{
+    color: #0c0c01;
+    text-align: left;
+  }
+
+  .copyright {
+    margin-top:20px;
+    background-color:#0c0c01;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:white;
+  }
+  
+
+  #fixedbutton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }
+  #fixedbutton:hover {
+    transform:  translateY(1px) ;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }
