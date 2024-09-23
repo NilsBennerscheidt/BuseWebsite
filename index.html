@@ -2,159 +2,99 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, duser-scalable=0" />
-  <title>Buse</title>
-<script type="module" crossorigin src="/assets/index.ae5bd0b9.js"></script>
-  <link rel="modulepreload" href="/assets/vendor.37082f73.js">
-  <link rel="stylesheet" href="/assets/index.6918b28e.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buse Bedachungen</title>
+
+  <!-- Tailwind CSS -->
+  <link href="./main.css" rel="stylesheet">
 </head>
 
-<body >
-  <canvas id="bg"></canvas>
-
-  <div class="navbar">
-
-    <div class="nav-item">
-      <a href="#" class="nav-link">
-        <img src="/assets/home.2c76f41d.svg" alt="" class="imgsvg">
-        <p align="center" class="linktext">Home</p>
-      </a>
-
+<body class="bg-background text-text">
+  <nav class="shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a id="logo-container" href="#" class="text-lg font-bold text-primary">Hier Kommt ein Logo hin</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#" class=" hover:text-accent">Start</a></li>
+        <li><a href="#" class=" hover:text-accent">Über uns</a></li>
+        <li><a href="#" class=" hover:text-accent">Kontakt</a></li>
+      </ul>
+      <a href="#" class="md:hidden "><i class="material-icons">menu</i></a>
     </div>
-    <div class="nav-item">
-      <a href="#about" class="nav-link">
-        <img src="/assets/info.ef5eada5.svg" alt="" class="imgsvg">
-        <p align="center" class="linktext">About</p>
-      </a>
-
-    </div>
-    <div class="nav-item">
-      <a href="#gallery" class="nav-link">
-        <img src="/assets/gallery.ecaa69fb.svg" alt="" class="imgsvg">
-        <p align="center" class="linktext">Galllary</p>
-      </a>
-    </div>
-    <div class="nav-item">
-      <a href="#contact" class="nav-link">
-        <img src="/assets/contact.bcc74110.svg" alt="" class="imgsvg">
-        <p align="center" class="linktext">Contact</p>
-      </a>
+  </nav>
+  
+  <div id="index-banner" class="relative bg-cover bg-center h-[80vh]" style="background-image: url('/bilder/TeamFoto (2).jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center ">
+        <h1 class="text-4xl font-bold">Buse Bedachungen</h1>
+        <h5 class="mt-4 text-lg">Sag nein zum Dachschaden</h5>
+      </div>
     </div>
   </div>
-
-  <main>
-
-    <header>
-      <h1>Buse Bedachungen</h1>
-      <p>Wilkommen auf unserer Homepage</p>
-    </header>
-
-
-    <!-- <blockquote>
-        <p>I like making stuff and putting it on the internet</p>
-      </blockquote> -->
-
-    <section id="about" class="marginTopMobile">
-      <h2>📜 Über uns</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est
-        laborum.
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est
-        laborum.
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est
-        laborum.
-      </p>
-
-    </section>
-
-    <section id="gallery" class="light">
-      <h2>Gallerie</h2>
-
-      <img src="/assets/Team.e040487a.jpg" alt="Das Team von Buse Bedachungen" class="imageWidth">
-
-      <h2>Unserer Partner</h2>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est
-        laborum.
-      </p>
-
-    </section>
-
-    <blockquote>
-      <p>Ein Trockenes Dach ist eine Kunst <br>-Robert Frost</p>
-    </blockquote>
-
-    <section id="contact" class="left">
-
-
-      <h2>Kontaktformular</h2>
-      <p>Rufen sie uns einfach an oder senden sie uns eine Nachricht <br> </p>
-
-
-
-      <div class="inputForm">
-        <div class="inDiv flexindiv">
-          <label for="fname">First Name</label>
-          <input type="text" id="vorname" name="firstname" placeholder="Vorname">
-        </div>
-
-        <div class="inDiv flexindiv">
-          <label for="lname">Last Name</label>
-          <input type="text" id="nachname" name="firstname" placeholder="Nachname">
-        </div>
-
-        <div class="inDiv2 flexindiv">
-
-          <label for="emailadress">E-Mail Adresse</label>
-          <input type="text" id="emailadresse" name="firstname" placeholder="E-Mail">
-        </div>
-
-        <div class="inDiv2 flexindiv">
-          <label for="mMessage">Nachricht</label>
-          <textarea  id="nachricht" class="mMessage" name="firstname" ></textarea>
-        </div>
-
-        <Button id="submitForm" class="fSubmitForm" onclick="getinput()">
-          <span>Absenden</span>
-        </Button>
-      </div>
-
-    </section>
-
-    <blockquote>
-      <p>Bis Bald</p>
-    </blockquote>
-
-
-  </main>
   
-  <!-- <script type="module" src="./input.js"></script> -->
+  <div class="p-6 my-16">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="text-accent text-6xl"><i class="material-icons"></i></div>
+        <h5 class="mt-4 text-xl font-bold text-primary">Dächer</h5>
+        <p class="mt-2 ">Egal ob Schiefer oder Schindeln, wir bauen ihnen ein trockenes Dach über dem Kopf.</p>
+      </div>
+  
+      <div class="text-center">
+        <div class="text-accent text-6xl"><i class="material-icons"></i></div>
+        <h5 class="mt-4 text-xl font-bold text-primary">Balkons und Dachterassen</h5>
+        <p class="mt-2 ">Abends die Sonne auf ihrem Balkon oder Terasse die Sonne genießen? Zusammen mit unseren Partnern bauen wir ihren Traumbalkon.</p>
+      </div>
+  
+      <div class="text-center">
+        <div class="text-accent text-6xl"><i class="material-icons"></i></div>
+        <h5 class="mt-4 text-xl font-bold text-primary">Sturmschäden Notdienst</h5>
+        <p class="mt-2 ">Hat der letzte Sturm mal wieder das Dach vom Kopf geweht? Wir helfen - ruf uns an!</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="relative bg-cover bg-center h-96 " style="background-image: url('img3.jpg');">
+    <div class="absolute p-6 inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <h5 class=" text-lg">A modern responsive front-end framework based on Material Design</h5>
+    </div>
+  </div>
+  
+  <div class="container p-6 my-16">
+    <div class="text-center">
+      <h4 class="text-2xl font-bold text-primary mb-4">Wer wir sind</h4>
+       <p>1919 legte Josef Buse den Grundstein für das, was heute als Dachdeckerbetrieb Buse bekannt ist. Von Anfang an stand sein Name für höchste Handwerkskunst und Verlässlichkeit – Werte, die bis heute fest in unserem Unternehmen verankert sind.<br/><br/>
+       Heute führt sein Enkel Michael Buse den Betrieb in dritter Generation. Mit seinem Sohn Felix, der seit 2019 als ausgebildeter Dachdecker immer mehr Verantwortung übernimmt, ist auch die vierte Generation bereit, die Zukunft des Unternehmens zu gestalten. Gemeinsam leiten sie ein starkes Team aus 10 erfahrenen Gesellen und 3 motivierten Auszubildenden.<br/><br/>
+       Seit über 105 Jahren leben wir unsere Tradition und blicken mit innovativen Ideen in die Zukunft.</p>
+    </div>
+  </div>
+  
+  <div class="relative bg-cover bg-center h-96 p-6 " style="background-image: url('img2.jpg');"></div>
+  
+  <div class="container p-6  my-16">
+    <div class="text-center">
+      <h4 class="text-2xl font-bold text-primary mb-4">Contact Us</h4>
+      <p class=" mb-8">Wir können was für euch tun? Dann ruft uns einfach an, schreibt uns eine Mail oder nutzt das Kontaktformular.</p>
+      <div class="max-w-md mx-auto">
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="relative bg-cover bg-center h-96" style="background-image: url('img4.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <h5 class=" text-lg">A modern responsive front-end framework based on Material Design</h5>
+    </div>
+  </div>
+  
+  <footer class="bg-primary py-4">
+    <div class="container mx-auto text-center ">
+      <a href="./impressum.html" class="hover:underline">Impressum</a> |
+      <a href="./datenschutz.html" class="hover:underline">Datenschutz</a>
+    </div>
+  </footer>
+  
 </body>
+<script src="js/script.js"></script>
 
 </html>
