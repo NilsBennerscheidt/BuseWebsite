@@ -16,8 +16,10 @@
       <a id="logo-container" href="#" class="text-lg font-bold text-primary">Hier Kommt ein Logo hin</a>
       <ul class="hidden md:flex space-x-6">
         <li><a href="#" class=" hover:text-accent">Start</a></li>
-        <li><a href="#" class=" hover:text-accent">Über uns</a></li>
-        <li><a href="#" class=" hover:text-accent">Kontakt</a></li>
+        <li><a href="#services" class=" hover:text-accent">Leistungen</a></li>
+        <li><a href="#contact" class=" hover:text-accent">Kontakt</a></li>
+        <li><a href="#gallery" class=" hover:text-accent">Gallerie</a></li>
+        <li><a href="#aboutUs" class=" hover:text-accent">Über uns</a></li>
       </ul>
       <a href="#" class="md:hidden "><i class="material-icons">menu</i></a>
     </div>
@@ -33,7 +35,7 @@
     </div>
   </div>
 
-  <div class="p-6 my-16">
+  <div class="p-6 my-16" id="services">
     <div class="grid md:grid-cols-3 gap-8">
       <div class="text-center">
         <div class="text-accent text-6xl"><i class="material-icons"></i></div>
@@ -57,14 +59,59 @@
   </div>
 
   <div class="relative bg-cover bg-center h-96 " style="background-image: url('/img/TeamFoto1.jpg');">
-    <div class="absolute p-6 inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <h5 class=" text-lg"><br />Seit über 105 Jahren leben wir unsere Tradition und blicken mit innovativen Ideen in
-        die Zukunft - Michael Buse</h5>
+    <div class="absolute p-12 inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+      <h5 class="text-xl">Seit über 105 Jahren leben wir unsere Tradition und blicken mit innovativen Ideen in die
+        Zukunft</h5>
+    </div>
+  </div>
+
+  <div class=" p-6  my-16" id="contact">
+    <div class="text-center">
+      <h4 class="text-2xl font-bold text-primary mb-4">Kontakt</h4>
+      <div class="flex flex-col items-center sm:flex-row justify-around sm:mt-4">
+        <div class="text-center">
+          <h5 class="mt-4 text-xl font-bold text-primary">📧</h5>
+
+          <a href="mailto:buse-bedachungen@web.de" class="mt-2 hover:underline">
+            Schickt uns eine E-Mail
+          </a>
+          <br />
+          <a href="mailto:buse-bedachungen@web.de" class="text-primary hover:underline">
+            buse-bedachungen@web.de
+          </a>
+        </div>
+
+        <div class="text-center">
+          <h5 class="mt-4 text-xl font-bold text-primary">📞</h5>
+
+          <a href="tel:02363-35045" class="mt-2 hover:underline">
+            Oder ruft uns an
+          </a>
+          <br />
+          <a href="tel:02363-35045" class="text-primary hover:underline">
+            02363-35045
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative bg-cover bg-center h-96 p-6 " style="background-image: url('/img/BuseBedachungen20.jpg')" />
+  </div>
+
+  <div class=" p-6 my-16 " id="gallery">
+    <div class="text-center">
+      <h4 class="text-2xl font-bold text-primary mb-4">Galerie</h4>
+      <p>Hier sind einige der Projekte die wir durchgefürht haben.</p>
+      <img src="./img/BuseBedachungen17.JPG" style="width:100%">
 
     </div>
   </div>
 
-  <div class="container p-6 my-16">
+  <div class="relative bg-cover bg-center h-96 p-6 " style="background-image: url('/img/BuseBedachungen20.jpg');" />
+  </div>
+
+  <div class=" p-6 my-16 " id="aboutUs">
     <div class="text-center">
       <h4 class="text-2xl font-bold text-primary mb-4">Wer wir sind</h4>
       <p>1919 legte Josef Buse den Grundstein für das, was heute als Dachdeckerbetrieb Buse bekannt ist. Von Anfang an
@@ -76,34 +123,7 @@
         Dach zu hoch.</p>
     </div>
   </div>
-
-  <div class="relative bg-cover bg-center h-96 p-6 " style="background-image: url('/img/BuseBedachungen20.jpg');">
-  </div>
-
-  <div class="container p-6  my-16">
-    <div class="text-center">
-      <h4 class="text-2xl font-bold text-primary mb-4">Kontakt</h4>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center">
-          <div class="text-accent text-6xl"><i class="material-icons"></i></div>
-          <h5 class="mt-4 text-xl font-bold text-primary">📧</h5>
-          <p class="mt-2 ">
-            <a href="mailto:buse-bedachungen@web.de" />
-            Schickt uns eine E-Mail
-          </p>
-        </div>
-
-        <div class="text-center">
-          <div class="text-accent text-6xl"><i class="material-icons"></i></div>
-          <h5 class="mt-4 text-xl font-bold text-primary">📞</h5>
-          <p class="mt-2 ">
-            <a href="tel:02363-35045" />
-            Oder ruft uns an
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <div class="relative bg-cover bg-center h-96" style="background-image: url('/img/TeamFoto5.jpg');">
     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -114,7 +134,8 @@
   <footer class="bg-primary py-4">
     <div class="container mx-auto text-center ">
       <a href="./impressum.html" class="hover:underline">Impressum</a> |
-      <a href="./datenschutz.html" class="hover:underline">Datenschutz</a>
+      <a href="./datenschutz.html" class="hover:underline">Datenschutz</a> |
+      <a href="./datenschutz.html" class="hover:underline">Kontakt</a>
     </div>
   </footer>
 
