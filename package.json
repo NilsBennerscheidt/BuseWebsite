@@ -4,7 +4,8 @@
   "description": "a website for felix",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "npx tailwindcss -i ./main_input.css -o ./main.css --watch"
   },
   "author": "",
   "license": "ISC",
