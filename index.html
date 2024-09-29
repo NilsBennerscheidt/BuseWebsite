@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -21,8 +21,15 @@
         <li><a href="#gallery" class=" hover:text-accent">Gallerie</a></li>
         <li><a href="#aboutUs" class=" hover:text-accent">Über uns</a></li>
       </ul>
-      <a href="#" class="md:hidden "><i class="material-icons">menu</i></a>
+      <a href="#" class="md:hidden " onclick="menuToggle()"><i class="material-icons">menu</i></a>
     </div>
+    <ul id="mobile-menu" class="hidden flex flex-col space-y-4 p-4 md:hidden">
+      <li><a href="#" class="hover:text-accent">Start</a></li>
+      <li><a href="#services" class="hover:text-accent">Leistungen</a></li>
+      <li><a href="#contact" class="hover:text-accent">Kontakt</a></li>
+      <li><a href="#gallery" class="hover:text-accent">Gallerie</a></li>
+      <li><a href="#aboutUs" class="hover:text-accent">Über uns</a></li>
+    </ul>
   </nav>
 
   <div id="index-banner" class="relative bg-cover bg-center h-[80vh]"
