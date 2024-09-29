@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-background text-text">
-  <nav class="shadow">
+  <nav class="shadow fixed top-0 bg-background z-40 w-full">
     <div class="container mx-auto flex justify-between items-center p-4">
       <a id="logo-container" href="#" class="text-lg font-bold text-primary">Hier Kommt ein Logo hin</a>
       <ul class="hidden md:flex space-x-6">
@@ -21,7 +21,7 @@
         <li><a href="#gallery" class=" hover:text-accent">Gallerie</a></li>
         <li><a href="#aboutUs" class=" hover:text-accent">Über uns</a></li>
       </ul>
-      <a href="#" class="md:hidden " onclick="menuToggle()"><i class="material-icons">menu</i></a>
+      <a class="md:hidden " onclick="menuToggle()"><i class="material-icons">menu</i></a>
     </div>
     <ul id="mobile-menu" class="hidden flex flex-col space-y-4 p-4 md:hidden">
       <li><a href="#" class="hover:text-accent">Start</a></li>
@@ -32,7 +32,7 @@
     </ul>
   </nav>
 
-  <div id="index-banner" class="relative bg-cover bg-center h-[80vh]"
+  <div id="index-banner" class="relative bg-cover bg-center h-[80vh] mt-16"
     style="background-image: url('/img/TeamFoto2.jpg');">
     <div class="absolute inset-0 bg-black bg-opacity-65 flex items-center justify-center">
       <div class="text-center ">
