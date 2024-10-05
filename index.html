@@ -77,13 +77,73 @@
     </div>
   </div>
 
- 
+
   <div class=" p-6 my-16 " id="gallery">
     <div class="text-center">
       <h4 class="text-2xl font-bold text-primary mb-4">Galerie</h4>
       <p>Hier sind einige der Projekte die wir durchgefürht haben.</p>
-      <img src="./img/BuseBedachungen17.JPG" style="width:100%">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gallery-limit">
+          <div class="relative group">
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/BuseBedachungen2.JPG"
+              alt="Image 1" onclick="openModal(1)">
+          </div>
 
+          <div class="relative group">
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/BuseBedachungen7.JPG"
+              alt="Image 2" onclick="openModal(2)">
+          </div>
+
+          <div class="relative group">
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/BuseBedachungen9.JPG"
+              alt="Image 3" onclick="openModal(3)">
+          </div>
+
+          <div class="relative group">
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/BuseBedachungen12.JPG"
+              alt="Image 4" onclick="openModal(4)">
+          </div>
+
+          <div class="relative group">
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/BuseBedachungen17.JPG"
+              alt="Image 5" onclick="openModal(5)">
+          </div>
+
+          <div class="relative group">
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/BuseBedachungen20.JPG"
+              alt="Image 6" onclick="openModal(6)">
+          </div>
+
+          <div class="relative group">
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/BuseBedachungen2.JPG"
+              alt="Image 7" onclick="openModal(7)">
+          </div>
+
+          <div class="relative group">
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/BuseBedachungen2.JPG"
+              alt="Image 8" onclick="openModal(8)">
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for viewing images in detail -->
+      <div id="imageModal" class="mx-4 fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
+        <div class="relative">
+          <img id="modalImage" class="max-w-full max-h-full object-contain rounded-lg">
+          <button class="absolute top-2 right-2 bg-white text-black rounded-full px-3 py-1 font-semibold shadow-md"
+            onclick="closeModal()">Close</button>
+          <!-- Previous Button -->
+          <button id="prevBtn"
+            class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full px-4 py-2 font-semibold shadow-md"
+            onclick="prevImage()">Previous</button>
+
+          <!-- Next Button -->
+          <button id="nextBtn"
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full px-4 py-2 font-semibold shadow-md"
+            onclick="nextImage()">Next</button>
+
+        </div>
+      </div>
     </div>
   </div>
 
@@ -98,13 +158,15 @@
       <div class="flex flex-col-reverse md:flex-row md:items-center md:space-x-4 m-4">
 
         <img src="./img/JosefBuse.png" alt="" class="md:w-48 h-auto mt-4 md:mt-0">
-        <p class="m-4 md:m-0">1919 legte Josef Buse den Grundstein für das, was heute als Dachdeckerbetrieb Buse bekannt ist. Von Anfang an
+        <p class="m-4 md:m-0">1919 legte Josef Buse den Grundstein für das, was heute als Dachdeckerbetrieb Buse bekannt
+          ist. Von Anfang an
           stand sein Name für höchste Handwerkskunst und Verlässlichkeit – Werte, die bis heute fest in unserem
           Unternehmen verankert sind.
         </p>
       </div>
       <div class="flex flex-col  md:flex-row md:items-center md:space-x-4 m-4 md:mt-0">
-        <p class="m-4 md:m-0">Heute führt sein Sohn Michael Buse den Betrieb in zweiter Generation. Seit 2019 ist wiederum sein Sohn in
+        <p class="m-4 md:m-0">Heute führt sein Sohn Michael Buse den Betrieb in zweiter Generation. Seit 2019 ist
+          wiederum sein Sohn in
           dritter Generation mit an Bord, übernimmt immer mehr Verantwortung, um die Zukunft des Unternehmens zu
           gestalten. Gemeinsam mit ihrem starken Team aus 7 erfahrenen Gesellen und 3 Auszubildenden ist für sie kein
           Dach zu hoch.</p>
@@ -118,7 +180,7 @@
 
   </div>
 
- 
+
   <div class=" p-6  my-16" id="contact">
     <div class="text-center">
       <h4 class="text-2xl font-bold text-primary mb-4">Kontakt</h4>

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.gallery-limit {
+    height: calc(2 * 16rem);
+    /* Limiting to 3 rows of images (h-64 for image height) */
+    overflow-y: scroll;
+}
