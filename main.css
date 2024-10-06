@@ -663,20 +663,12 @@ video {
   inset: 0px;
 }
 
-.bottom-4 {
-  bottom: 1rem;
-}
-
 .end-1 {
   inset-inline-end: 0.25rem;
 }
 
 .left-2 {
   left: 0.5rem;
-}
-
-.left-4 {
-  left: 1rem;
 }
 
 .right-2 {
@@ -773,8 +765,8 @@ video {
   margin-bottom: 1rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mt-2 {
@@ -783,10 +775,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
 }
 
 .box-border {
@@ -888,10 +876,6 @@ video {
   display: none;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-64 {
   height: 16rem;
 }
@@ -910,10 +894,6 @@ video {
 
 .max-h-full {
   max-height: 100%;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -1959,11 +1939,6 @@ video {
   background-color: rgb(200 23 14 / var(--tw-bg-opacity));
 }
 
-.bg-red-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1979,6 +1954,22 @@ video {
 
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
+}
+
+.bg-opacity-55 {
+  --tw-bg-opacity: 0.55;
+}
+
+.bg-opacity-45 {
+  --tw-bg-opacity: 0.45;
+}
+
+.bg-\[url\(\'\/img\/BackgroundX2\.jpg\'\)\] {
+  background-image: url('/img/BackgroundX2.jpg');
+}
+
+.bg-\[url\(\'\/img\/BackgroundY\.jpg\'\)\] {
+  background-image: url('/img/BackgroundY.jpg');
 }
 
 .decoration-slice {
@@ -2154,11 +2145,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .text-left {
@@ -2396,6 +2382,10 @@ video {
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.opacity-40 {
+  opacity: 0.4;
 }
 
 .bg-blend-normal {
@@ -2808,6 +2798,18 @@ video {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:bg-\[url\(\'\/img\/BackgroundY\.jpg\'\)\] {
+    background-image: url('/img/BackgroundY.jpg');
+  }
+
+  .sm\:bg-\[url\(\'\/img\/BackgroundX2\.jpg\'\)\] {
+    background-image: url('/img/BackgroundX2.jpg');
+  }
+
+  .sm\:bg-\[url\(\'\/img\/BuseLogo1\.jpg\'\)\] {
+    background-image: url('/img/BuseLogo1.jpg');
   }
 
   .sm\:px-6 {

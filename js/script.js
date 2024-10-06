@@ -1,9 +1,3 @@
-function rmHandle() {
-    console.log("hi")
-    return 1
-
-}
-
 function menuToggle() {
     const mobileMenu = document.getElementById('mobile-menu');
     mobileMenu.classList.toggle('hidden');
@@ -17,7 +11,6 @@ function openModal(index) {
     const modalImage = document.getElementById('modalImage');
     modalImage.src = images[currentIndex].src;
     document.getElementById('imageModal').classList.remove('hidden');
-    updateButtons();
 }
 
 function closeModal() {
@@ -27,24 +20,22 @@ function closeModal() {
 function prevImage() {
     if (currentIndex > 0) {
         currentIndex--;
-        const modalImage = document.getElementById('modalImage');
-        modalImage.src = images[currentIndex].src;
-        updateButtons();
+    } else {
+        currentIndex = images.length - 2;
     }
+
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = images[currentIndex].src;
 }
 
 function nextImage() {
-    if (currentIndex < images.length - 1) {
+    if (currentIndex < images.length - 2) {
+        console.log(currentIndex);
         currentIndex++;
-        const modalImage = document.getElementById('modalImage');
-        modalImage.src = images[currentIndex].src;
-        updateButtons();
+    } else {
+        currentIndex = 0
     }
-}
 
-function updateButtons() {
-    // Disable "Previous" button when at the first image
-    document.getElementById('prevBtn').disabled = currentIndex === 0;
-    // Disable "Next" button when at the last image
-    document.getElementById('nextBtn').disabled = currentIndex === images.length - 1;
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = images[currentIndex].src;
 }

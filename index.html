@@ -12,8 +12,11 @@
   <!-- Tailwind CSS -->
   <link href="./main.css" rel="stylesheet">
 </head>
+<!-- style="background-image: url('/img/TeamFoto2.jpg');" -->
 
-<body class="bg-fixed bg-center bg-cover text-text" style="background-image: url('/img/TeamFoto2.jpg');">
+<body class="bg-fixed bg-center bg-cover text-text 
+           sm:bg-[url('/img/BackgroundY.jpg')] 
+           bg-[url('/img/BackgroundY.jpg')]" >
   <nav class="shadow fixed top-0 bg-background z-40 w-full">
     <div class="container mx-auto flex justify-between items-center p-4">
       <a id="logo-container" href="#" class="text-lg font-bold text-primary">Hier Kommt ein Logo hin</a>
@@ -27,17 +30,17 @@
       <a class="md:hidden " onclick="menuToggle()"><i class="material-icons">menu</i></a>
     </div>
     <ul id="mobile-menu" class="hidden flex flex-col space-y-4 p-4 md:hidden">
-      <li><a onclick="menuToggle()" href="#" class="hover:text-accent">Start</a></li>
-      <li><a onclick="menuToggle()" href="#services" class="hover:text-accent w-full">Leistungen</a></li>
-      <li><a onclick="menuToggle()" href="#gallery" class="hover:text-accent w-full">Gallerie</a></li>
-      <li><a onclick="menuToggle()" href="#aboutUs" class="hover:text-accent w-full">Über uns</a></li>
-      <li><a onclick="menuToggle()" href="#contact" class="hover:text-accent w-full">Kontakt</a></li>
+      <li onclick="menuToggle()"><a  href="#" class="hover:text-accent">Start</a></li>
+      <li onclick="menuToggle()"><a  href="#services" class="hover:text-accent w-full">Leistungen</a></li>
+      <li onclick="menuToggle()"><a  href="#gallery" class="hover:text-accent w-full">Gallerie</a></li>
+      <li onclick="menuToggle()"><a  href="#aboutUs" class="hover:text-accent w-full">Über uns</a></li>
+      <li onclick="menuToggle()"><a  href="#contact" class="hover:text-accent w-full">Kontakt</a></li>
     </ul>
   </nav>
 
 
   <div id="index-banner" class="relative bg-cover bg-center h-[80vh] mt-14" style="">
-    <div class="absolute inset-0 bg-black  bg-opacity-65 flex items-center justify-center">
+    <div class="absolute inset-0 bg-black  bg-opacity-45 flex items-center justify-center">
       <div class="text-center ">
         <h1 class="text-4xl font-bold">Buse Bedachungen</h1>
         <h5 class="mt-4 text-lg">Sag nein zum Dachschaden</h5>
@@ -221,17 +224,17 @@
         class="px-4 z-50 fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
         <div class="relative">
           <img id="modalImage" class="max-w-full max-h-full object-contain rounded-lg">
-          <button class="absolute top-2 right-2 bg-white text-black rounded-full px-3 py-1 font-semibold shadow-md"
-            onclick="closeModal()">Close</button>
+          <button class="absolute top-2 right-2 text-text rounded-full px-3 py-1 font-semibold shadow-md"
+            onclick="closeModal()">✖️</button>
           <!-- Previous Button -->
           <button id="prevBtn"
-            class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full px-4 py-2 font-semibold shadow-md"
-            onclick="prevImage()">Previous</button>
+            class="absolute left-2 top-1/2 transform -translate-y-1/2 text-text rounded-full px-4 py-2 font-semibold shadow-md"
+            onclick="prevImage()">⬅️</button>
 
           <!-- Next Button -->
           <button id="nextBtn"
-            class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full px-4 py-2 font-semibold shadow-md"
-            onclick="nextImage()">Next</button>
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 text-text rounded-full px-4 py-2 font-semibold shadow-md"
+            onclick="nextImage()">➡️</button>
 
         </div>
       </div>
