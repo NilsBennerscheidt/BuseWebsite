@@ -39,3 +39,46 @@ function nextImage() {
     const modalImage = document.getElementById('modalImage');
     modalImage.src = images[currentIndex].src;
 }
+
+const API_KEY = 'ca45f192bcb043d1be7182315240710'; // Replace with your WeatherAPI key
+const LATITUDE = 51.6595;  // Latitude for Berlin
+const LONGITUDE = 7.3465; // Longitude for Berlin
+
+async function getWeatherData(apiKey) {
+    const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${LATITUDE},${LONGITUDE}&days=10&alerts=yes&lang=de`;
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Error fetching weather data:", error);
+    }
+}
+
+function checkStorms(weatherData) {
+    const stormResult = document.getElementById("storm-result");
+    const forecastDays = weatherData.forecast.forecastday;
+    let stormFound = false;
+
+    forecastDays.forEach(day => {
+        if (day.day.condition.text.includes('Thunderstorm')) {
+            const date = new Date(day.date).toLocaleDateString('de-DE');
+            stormFound = true;
+            stormResult.textContent = `Ein Sturm wurde für den ${date} gefunden!`;
+        }
+    });
+
+    if (!stormFound) {
+        stormResult.textContent = "Kein Sturm in den nächsten Tagen erwartet.";
+    }
+}
+
+async function runStormCheck() {
+    const weatherData = await getWeatherData(API_KEY);
+    if (weatherData) {
+        checkStorms(weatherData);
+    }
+}
+
+runStormCheck();
