@@ -66,12 +66,10 @@ function checkStorms(weatherData) {
             const date = new Date(day.date).toLocaleDateString('de-DE');
             stormFound = true;
             stormResult.textContent = `Ein Sturm wurde für den ${date} gefunden!`;
+            stormResult.classList.toggle('hidden');
         }
     });
 
-    if (!stormFound) {
-        stormResult.textContent = "Kein Sturm in den nächsten Tagen erwartet.";
-    }
 }
 
 async function runStormCheck() {
