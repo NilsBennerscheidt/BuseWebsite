@@ -32,7 +32,7 @@
         <li><a href="#contact" class=" hover:text-accent">Kontakt</a></li>
         <li><a href="#carrer" class=" hover:text-accent">Karriere</a></li>
       </ul>
-      <a class="md:hidden " onclick="menuToggle()" loading="lazy"><i class="material-icons">menu</i></a>
+      <a class="md:hidden " onclick="menuToggle()" loading="lazy"><img class="h-8 w-8" src="/icon/three-horizontal-lines-icon.svg" alt="Menu SVG"/> </a>
     </div>
     <ul id="mobile-menu" class="hidden flex flex-col space-y-4 p-4 md:hidden">
       <li onclick="menuToggle()" loading="lazy"><a href="#" class="hover:text-accent">Start</a></li>
@@ -226,18 +226,18 @@
       <div id="imageModal"
         class="px-4 z-50 fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
         <div class="relative">
-          <img id="modalImage" class="max-w-full max-h-full object-contain rounded-lg">
-          <button class="absolute top-2 right-2 text-text rounded-full px-3 py-1 font-semibold shadow-md"
-            onclick="closeModal()" loading="lazy">✖️</button>
+          <img id="modalImage" class="max-w-full max-h-[90vh] object-contain rounded-lg">
+          <button class="absolute top-2 right-2 text-text rounded-full py-1 font-semibold"
+            onclick="closeModal()" loading="lazy"><img class="h-8 w-8" src="/icon/math-multiplication-icon.svg" alt="My Happy SVG"/></button>
           <!-- Previous Button -->
           <button id="prevBtn"
-            class="absolute left-2 top-1/2 transform -translate-y-1/2 text-text rounded-full px-4 py-2 font-semibold shadow-md"
-            onclick="prevImage()" loading="lazy">⬅️</button>
+            class="absolute left-2 top-1/2 transform -translate-y-1/2 text-text rounded-full py-2 font-semibold"
+            onclick="prevImage()" loading="lazy"><img class="h-8 w-8" src="/icon/angle-circle-left-icon.svg" alt="My Happy SVG"/></button>
 
           <!-- Next Button -->
           <button id="nextBtn"
-            class="absolute right-2 top-1/2 transform -translate-y-1/2 text-text rounded-full px-4 py-2 font-semibold shadow-md"
-            onclick="nextImage()" loading="lazy">➡️</button>
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 text-text rounded-full  py-2 font-semibold"
+            onclick="nextImage()" loading="lazy"><img class="h-8 w-8" src="/icon/angle-circle-right-icon.svg" alt="My Happy SVG"/></button>
 
         </div>
       </div>
@@ -253,23 +253,23 @@
       <h4 class="text-center text-2xl font-bold text-primary mb-4">Wer wir sind</h4>
 
       <div class="flex flex-col items-center sm:w-10/12 md:w-2/3 lg:w-1/2">
-        <div class="flex flex-col-reverse sm:flex-row sm:items-center sm:space-x-4 m-4">
+        <div class="flex flex-col-reverse sm:flex-row items-center sm:space-x-4 m-4">
 
-          <img src="./img/JosefBuse.jpg" alt="Josef Buse. Der Gründer der Firma und " class="sm:w-48 h-auto mt-4 sm:mt-0">
-          <p class="m-4 sm:m-0 md:1/2">1919 legte Josef Buse den Grundstein für das, was heute als Dachdeckerbetrieb Buse
+          <img src="./img/JosefBuse.jpg" alt="Josef Buse. Der Gründer der Firma und " class="w-64 h-auto mt-4 sm:mt-0">
+          <p class="m-4 sm:m-0 md:1/2 text-justify">1919 legte Josef Buse den Grundstein für das, was heute als Dachdeckerbetrieb Buse
             bekannt
             ist. Von Anfang an
             stand sein Name für höchste Handwerkskunst und Verlässlichkeit – Werte, die bis heute fest in unserem
             Unternehmen verankert sind.
           </p>
         </div>
-        <div class="flex flex-col  sm:flex-row sm:items-center sm:space-x-4 m-4 sm:mt-0">
-          <p class="m-4 sm:m-0 md:1/2">Heute führt sein Sohn Michael Buse den Betrieb in zweiter Generation. Seit 2019 ist
+        <div class="flex flex-col  sm:flex-row items-center sm:space-x-4 m-4 sm:mt-0">
+          <p class="m-4 sm:m-0 md:1/2 text-justify">Heute führt sein Sohn Michael Buse den Betrieb in zweiter Generation. Seit 2019 ist
             wiederum sein Sohn in
             dritter Generation mit an Bord, übernimmt immer mehr Verantwortung, um die Zukunft des Unternehmens zu
             gestalten. Gemeinsam mit ihrem starken Team aus 7 erfahrenen Gesellen und 3 Auszubildenden ist für sie kein
             Dach zu hoch.</p>
-          <img src="./img/JosefBuse.jpg" alt="" class="sm:w-48 h-auto">
+          <img src="./img/JosefBuse.jpg" alt="" class="w-64 sm:h-auto">
         </div>
       </div>
     </div>
@@ -284,15 +284,24 @@
     <div class="text-center space-y-8">
       <h4 class="text-2xl font-bold text-primary mb-4">Kontakt</h4>
       <div class="flex flex-col lg:items-center sm:items-start sm:flex-row justify-around pt-4 space-y-8 sm:space-y-0">
-        <div class="text-center">
+        <div class="text-center items-center">
           <h5 class=" text-xl font-bold text-text ">Öffnungszeiten</h5>
-          <p>
-            Montag: 07:00 – 16:15<br />
-            Dienstag: 07:00 – 16:15<br />
-            Mittwoch: 07:00 – 16:15<br />
-            Donnerstag: 07:00 – 16:15<br />
-            Freitag: 07:00 – 13:15
-          </p>
+          <div class="flex text-sm space-x-2 justify-center pr-4 mt-2">
+            <p class="text-right">
+              Montag:<br />
+              Dienstag:<br />
+              Mittwoch:<br />
+              Donnerstag:<br />
+              Freitag:
+            </p>
+            <p class="">
+              07:00 – 16:15<br />
+              07:00 – 16:15<br />
+              07:00 – 16:15<br />
+              07:00 – 16:15<br />
+              07:00 – 13:15
+            </p>
+          </div>
         </div>
 
         <div class="text-center space-y-2 lg:w-3/4 lg:justify-around lg:flex lg:flex-row">
