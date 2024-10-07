@@ -4,7 +4,6 @@
 
 
 .gallery-limit {
-    height: calc(2 * 16rem);
-    /* Limiting to 3 rows of images (h-64 for image height) */
+    height: calc(1.9 * 16rem);
     overflow-y: scroll;
 }
