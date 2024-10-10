@@ -137,9 +137,9 @@
     <div class="text-center space-y-8">
       <h4 class="text-2xl font-bold text-primary mb-4">Galerie</h4>
       <p>Hier sind einige der Projekte die wir durchgefürht haben.</p>
-      <div class="hidden sm:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 ">
+      <div class="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 ">
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gallery-limit overflow-y-hidden sm: overflow-y-scroll"
+        <div class="grid grid-cols-3 lg:grid-cols-4 gap-6 gallery-limit overflow-y-scroll"
           id="gallaryImages">
 
           <div class="relative group">
@@ -226,10 +226,10 @@
 
       <!-- Modal for viewing images in detail -->
       <div id="imageModal"
-        class="px-4 z-50 h-64 sm:fixed sm:inset-0 sm:bg-black sm:h-full sm:bg-opacity-75 flex items-center justify-center sm:hidden">
+        class="px-4 z-50 h-64 sm:h-80 md:fixed md:inset-0 md:bg-black md:h-full md:bg-opacity-75 flex items-center justify-center md:hidden">
         <div class="relative">
-          <img id="modalImage" class="max-w-full max-h-[90vh] object-contain rounded-lg">
-          <button class="hidden sm:block absolute top-2 right-2 text-text rounded-full py-1 font-semibold" onclick="closeModal()"
+          <img id="modalImage" class="max-w-full max-h-64 sm:max-h-80 md:max-h-[90vh] object-contain rounded-lg">
+          <button class="hidden md:block absolute top-2 right-2 text-text rounded-full py-1 font-semibold" onclick="closeModal()"
             loading="lazy"><img class="h-8 w-8" src="/icon/math-multiplication-icon.svg" alt="My Happy SVG" /></button>
 
           <!-- Previous Button -->
