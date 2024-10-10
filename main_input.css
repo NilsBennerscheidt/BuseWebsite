@@ -5,7 +5,6 @@
 
 .gallery-limit {
     height: calc(1.9 * 16rem);
-    overflow-y: scroll;
 }
 
 html::before {

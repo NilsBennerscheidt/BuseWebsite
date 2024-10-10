@@ -3,6 +3,20 @@ function menuToggle() {
     mobileMenu.classList.toggle('hidden');
 }
 
+function gallaryScoll(){
+    document.getElementById('gallaryImages').classList.remove('overflow-y-hidden');
+    document.getElementById('gallaryImages').classList.add('overflow-y-scroll');    
+    document.getElementById('hideGallary').classList.remove('hidden');    
+    document.getElementById('showGallary').classList.add('hidden');    
+}
+
+function gallaryNotScoll(){
+    document.getElementById('gallaryImages').classList.add('overflow-y-hidden');
+    document.getElementById('gallaryImages').classList.remove('overflow-y-scroll');    
+    document.getElementById('hideGallary').classList.add('hidden');    
+    document.getElementById('showGallary').classList.remove('hidden');   
+}
+
 const images = document.querySelectorAll('#gallaryImages img');
 let currentIndex = 0;
 
@@ -10,7 +24,6 @@ function openModal(index) {
     currentIndex = index;
     const modalImage = document.getElementById('modalImage');
     modalImage.src = images[currentIndex].src;
-    console.log("🚀 ~ openModal ~ images:", images)
     document.getElementById('imageModal').classList.remove('hidden');
 }
 
@@ -31,7 +44,6 @@ function prevImage() {
 
 function nextImage() {
     if (currentIndex < images.length - 1) {
-        console.log(currentIndex);
         currentIndex++;
     } else {
         currentIndex = 0
