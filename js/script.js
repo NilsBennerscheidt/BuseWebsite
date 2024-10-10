@@ -22,13 +22,14 @@ let currentIndex = 0;
 
 function openModal(index) {
     currentIndex = index;
+    console.log("currentIndex", currentIndex)
     const modalImage = document.getElementById('modalImage');
     modalImage.src = images[currentIndex].src;
-    document.getElementById('imageModal').classList.remove('hidden');
+    document.getElementById('imageModal').classList.remove('sm:hidden');
 }
 
 function closeModal() {
-    document.getElementById('imageModal').classList.add('hidden');
+    document.getElementById('imageModal').classList.add('sm:hidden');
 }
 
 function prevImage() {
@@ -93,3 +94,4 @@ async function runStormCheck() {
 }
 
 runStormCheck();
+nextImage();

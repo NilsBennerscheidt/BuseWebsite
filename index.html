@@ -137,10 +137,11 @@
     <div class="text-center space-y-8">
       <h4 class="text-2xl font-bold text-primary mb-4">Galerie</h4>
       <p>Hier sind einige der Projekte die wir durchgefürht haben.</p>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 ">
+      <div class="hidden sm:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 ">
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gallery-limit overflow-y-hidden sm: overflow-y-scroll"
           id="gallaryImages">
+
           <div class="relative group">
             <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary1.jpg"
               alt="Image 1" onclick="openModal(0)">
@@ -162,85 +163,73 @@
           </div>
 
           <div class="relative group">
-            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary5.jpg"
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary7.jpg"
               alt="Image 1" onclick="openModal(4)" loading="lazy">
           </div>
 
           <div class="relative group">
-            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary7.jpg"
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary9.jpg"
               alt="Image 1" onclick="openModal(5)" loading="lazy">
           </div>
 
           <div class="relative group">
-            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary9.jpg"
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary10.jpg"
               alt="Image 1" onclick="openModal(6)" loading="lazy">
           </div>
 
           <div class="relative group">
-            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary10.jpg"
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary11.jpg"
               alt="Image 1" onclick="openModal(7)" loading="lazy">
           </div>
 
           <div class="relative group">
-            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary11.jpg"
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary12.jpg"
               alt="Image 1" onclick="openModal(8)" loading="lazy">
           </div>
 
           <div class="relative group">
-            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary12.jpg"
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary13.jpg"
               alt="Image 1" onclick="openModal(9)" loading="lazy">
           </div>
 
           <div class="relative group">
-            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary13.jpg"
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary14.jpg"
               alt="Image 1" onclick="openModal(10)" loading="lazy">
           </div>
 
           <div class="relative group">
-            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary14.jpg"
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary16.jpg"
               alt="Image 1" onclick="openModal(11)" loading="lazy">
           </div>
 
           <div class="relative group">
-            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary16.jpg"
+            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary19.jpg"
               alt="Image 1" onclick="openModal(12)" loading="lazy">
           </div>
 
           <div class="relative group">
-            <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary19.jpg"
-              alt="Image 1" onclick="openModal(13)" loading="lazy">
-          </div>
-
-          <div class="relative group">
             <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary22.jpg"
-              alt="Image 1" onclick="openModal(14)" loading="lazy">
+              alt="Image 1" onclick="openModal(13)" loading="lazy">
           </div>
           <div class="relative group">
             <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary23.jpg"
-              alt="Eine Schieferfassade von Buse Bedachungen" onclick="openModal(15)" loading="lazy">
+              alt="Eine Schieferfassade von Buse Bedachungen" onclick="openModal(14)" loading="lazy">
           </div>
 
           <div class="relative group">
             <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary24.jpg"
-              alt="Eine Schieferfassade von Buse Bedachungen" onclick="openModal(16)" loading="lazy">
+              alt="Eine Schieferfassade von Buse Bedachungen" onclick="openModal(15)" loading="lazy">
           </div>
 
         </div>
-        
-        
-        <div class="sm:hidden">
-          <div class="mt-8 w-full text-primary" id="showGallary" > <p class="hover:underline" onclick="gallaryScoll()">Bilder anzeigen</p> </div>
-          <div class="mt-8 w-full text-primary hidden" id="hideGallary"> <p class="hover:underline " onclick="gallaryNotScoll()">Bilder nicht anzeigen</p> </div>
-        </div>
-
       </div>
 
       <!-- Modal for viewing images in detail -->
       <div id="imageModal"
-        class="px-4 z-50 fixed inset-0 bg-black h-full bg-opacity-75 flex items-center justify-center hidden">
+        class="px-4 z-50 h-64 sm:fixed sm:inset-0 sm:bg-black sm:h-full sm:bg-opacity-75 flex items-center justify-center sm:hidden">
         <div class="relative">
           <img id="modalImage" class="max-w-full max-h-[90vh] object-contain rounded-lg">
-          <button class="absolute top-2 right-2 text-text rounded-full py-1 font-semibold" onclick="closeModal()"
+          <button class="hidden sm:block absolute top-2 right-2 text-text rounded-full py-1 font-semibold" onclick="closeModal()"
             loading="lazy"><img class="h-8 w-8" src="/icon/math-multiplication-icon.svg" alt="My Happy SVG" /></button>
 
           <!-- Previous Button -->
