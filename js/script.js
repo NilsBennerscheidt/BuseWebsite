@@ -25,11 +25,11 @@ function openModal(index) {
     console.log("currentIndex", currentIndex)
     const modalImage = document.getElementById('modalImage');
     modalImage.src = images[currentIndex].src;
-    document.getElementById('imageModal').classList.remove('sm:hidden');
+    document.getElementById('imageModal').classList.remove('md:hidden');
 }
 
 function closeModal() {
-    document.getElementById('imageModal').classList.add('sm:hidden');
+    document.getElementById('imageModal').classList.add('md:hidden');
 }
 
 function prevImage() {
