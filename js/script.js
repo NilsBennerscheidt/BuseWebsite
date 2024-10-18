@@ -3,19 +3,23 @@ function menuToggle() {
     mobileMenu.classList.toggle('hidden');
 }
 
-function gallaryScoll(){
-    document.getElementById('gallaryImages').classList.remove('overflow-y-hidden');
-    document.getElementById('gallaryImages').classList.add('overflow-y-scroll');    
-    document.getElementById('hideGallary').classList.remove('hidden');    
-    document.getElementById('showGallary').classList.add('hidden');    
-}
-
-function gallaryNotScoll(){
-    document.getElementById('gallaryImages').classList.add('overflow-y-hidden');
-    document.getElementById('gallaryImages').classList.remove('overflow-y-scroll');    
-    document.getElementById('hideGallary').classList.add('hidden');    
-    document.getElementById('showGallary').classList.remove('hidden');   
-}
+document.querySelectorAll('.accordion-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.accordion-icon');
+        
+        // Toggle content visibility
+        if (content.style.maxHeight) {
+          // Collapse the content
+          content.style.maxHeight = null;
+          icon.classList.remove('rotate-180'); // Rotate chevron back
+        } else {
+          // Expand the content
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.classList.add('rotate-180'); // Rotate chevron 180 degrees
+        }  
+    });
+});
 
 const images = document.querySelectorAll('#gallaryImages img');
 let currentIndex = 0;
