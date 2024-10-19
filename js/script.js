@@ -1,6 +1,15 @@
 function menuToggle() {
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenu.classList.toggle('hidden');
+    // const mobileMenu = document.getElementById('mobile-menu');
+    // mobileMenu.classList.toggle('hidden');
+    const menuContainer = document.getElementById('menu-container');
+
+    if (menuContainer.style.maxHeight) {
+      // Close the menu
+      menuContainer.style.maxHeight = null;
+    } else {
+      // Open the menu
+      menuContainer.style.maxHeight = menuContainer.scrollHeight + 'px';
+    }
 }
 
 document.querySelectorAll('.accordion-toggle').forEach(button => {
