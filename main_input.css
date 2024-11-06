@@ -14,6 +14,10 @@ html {
     touch-action: manipulation;
 }
 
+body {
+    touch-action: manipulation; /* prevents zoom on double-tap */
+}
+
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 15px;
