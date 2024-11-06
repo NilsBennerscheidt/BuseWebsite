@@ -5,7 +5,13 @@
 /* Firefox */
 html {
     scrollbar-width: thin;
-    scrollbar-color: rgb(12 11 11/var(--tw-bg-opacity)) ;
+    scrollbar-color: rgb(12 11 11/var(--tw-bg-opacity));
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    touch-action: manipulation;
 }
 
 /* Chrome, Edge, and Safari */
@@ -14,13 +20,13 @@ html {
 }
 
 *::-webkit-scrollbar-track {
-    background:  rgb(12 11 11/var(--tw-bg-opacity));
+    background: rgb(12 11 11/var(--tw-bg-opacity));
     border-radius: 5px;
 }
 
 *::-webkit-scrollbar-thumb {
     border-radius: 14px;
-    border: 3px solid  rgb(12 11 11/var(--tw-bg-opacity));
+    border: 3px solid rgb(12 11 11/var(--tw-bg-opacity));
 }
 
 .gallery-limit {
