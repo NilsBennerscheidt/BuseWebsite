@@ -3,11 +3,9 @@ function menuToggle() {
     const menuContainer = document.getElementById('menu-container');
 
     if (menuContainer.style.maxHeight) {
-        // Close the menu
         menuContainer.style.maxHeight = null;
         menuContainer.style.height = null;
     } else {
-        // Open the menu
         menuContainer.style.maxHeight = '100vh';
         menuContainer.style.height = '100vh';
     }
