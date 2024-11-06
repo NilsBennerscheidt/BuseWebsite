@@ -1,14 +1,15 @@
 function menuToggle() {
-    // const mobileMenu = document.getElementById('mobile-menu');
-    // mobileMenu.classList.toggle('hidden');
+   
     const menuContainer = document.getElementById('menu-container');
 
     if (menuContainer.style.maxHeight) {
       // Close the menu
       menuContainer.style.maxHeight = null;
+      menuContainer.style.height = null;
     } else {
       // Open the menu
-      menuContainer.style.maxHeight = menuContainer.scrollHeight + 'px';
+      menuContainer.style.maxHeight = '100vh';
+      menuContainer.style.height = '100vh';
     }
 }
 
