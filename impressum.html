@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buse Bedachungen | Impressum</title>
     <link href="./main.css" rel="stylesheet">
 </head>
+
 <body class="bg-background text-text">
-    <div class="max-w-3xl mx-auto p-6 bg-background rounded-lg shadow-md mt-10">
+    <nav class="shadow fixed top-0 z-10 w-full">
+        <div class="bg-background w-full p-4 flex justify-between items-center">
+            <div class="w-full xl:mx-16 flex justify-between items-center">
+                <a id="logo-container" href="#" class="text-lg font-bold text-primary">
+                    <img src="/logo/Buse Logo Web.svg" alt="Logo" class="h-8">
+                </a>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="index.html" class=" hover:text-primary">Start</a></li>
+                    <li><a href="index.html#services" class=" hover:text-primary">Leistungen</a></li>
+                    <li><a href="index.html#gallery" class=" hover:text-primary">Galerie</a></li>
+                    <li><a href="index.html#aboutUs" class=" hover:text-primary">Über uns</a></li>
+                    <li><a href="index.html#contact" class=" hover:text-primary">Kontakt</a></li>
+                    <li><a href="index.html#carrer" class=" hover:text-primary">Karriere</a></li>
+                </ul>
+            </div>
+            <button class="md:hidden " onclick="menuToggle()" loading="lazy"><img class="h-8 w-8"
+                    src="/icon/three-horizontal-lines-icon.svg" alt="Menu SVG" /> </button>
+        </div>
+        <div id="menu-container"
+            class="bg-background bg-opacity-85 ease-in-out transition-all duration-300 max-h-0 overflow-hidden">
+            <ul id="mobile-menu" class="flex flex-col p-4 md:hidden">
+                <li onclick="menuToggle()" loading="lazy"><a href="index.html" class="hover:text-primary">
+                        <p class="h-6">Start</p>
+                    </a></li>
+                <li onclick="menuToggle()" loading="lazy"><a href="index.html#services"
+                        class="hover:text-primary w-full">
+                        <p class="h-6"></p>Leistungen</p>
+                    </a></li>
+                <li onclick="menuToggle()" loading="lazy"><a href="index.html#gallery"
+                        class="hover:text-primary w-full">
+                        <p class="h-6"></p>Galerie</p>
+                    </a></li>
+                <li onclick="menuToggle()" loading="lazy"><a href="index.html#aboutUs"
+                        class="hover:text-primary w-full">
+                        <p class="h-6"></p>Über uns</p>
+                    </a></li>
+                <li onclick="menuToggle()" loading="lazy"><a href="index.html#contact"
+                        class="hover:text-primary w-full">
+                        <p class="h-6"></p>Kontakt</p>
+                    </a></li>
+                <li onclick="menuToggle()" loading="lazy"><a href="index.html#carrer" class="hover:text-primary w-full">
+                        <p class="h-6"></p>Karriere</p>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div
+        class="fixed rounded-full left-4 sm:left-8 bottom-5 sm:bottom-8 z-20 bg-primary border-solid border-[6px] border-red-900">
+        <a href="#contact" class="sm:flex items-center">
+            <img class="h-14 w-14 sm:h-12 sm:w-12 m-2 sm:mx-2  " src="/icon/phone.svg" alt="Menu SVG" />
+            <h2 class="hidden sm:block text-2xl mb-1 font-medium text-center sm:mr-6">Kontakt</h2>
+        </a>
+    </div>
+
+    <div class="max-w-3xl mx-auto p-6 mb-24 bg-background rounded-lg shadow-md mt-10">
         <h1 class="text-3xl font-bold text-center mb-6 text-primary">Impressum</h1>
         <div class="text-center mb-8">
             <a href="./index.html" class="text-primary hover:underline">Zurück</a>
@@ -25,7 +82,8 @@
             <div>
                 <h3 class="text-xl font-semibold">Kontakt</h3>
                 <p class="ml-4">Telefon: +49-2363-35045</p>
-                <p class="ml-4">E-Mail: <a href="mailto:buse-bedachungen@web.de" class="hover:underline">buse-bedachungen@web.de</a></p>
+                <p class="ml-4">E-Mail: <a href="mailto:buse-bedachungen@web.de"
+                        class="hover:underline">buse-bedachungen@web.de</a></p>
             </div>
             <div>
                 <h3 class="text-xl font-semibold">Registereintrag:</h3>
@@ -37,9 +95,11 @@
             </div>
             <div>
                 <h3 class="text-xl font-semibold">Verbraucher­streit­beilegung/Universal­schlichtungs­stelle</h3>
-                <p class="ml-4">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+                <p class="ml-4">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+                    Verbraucherschlichtungsstelle teilzunehmen.</p>
             </div>
         </div>
     </div>
 </body>
+
 </html>
