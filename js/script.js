@@ -1,33 +1,41 @@
 function menuToggle() {
-   
+
     const menuContainer = document.getElementById('menu-container');
 
     if (menuContainer.style.maxHeight) {
-      // Close the menu
-      menuContainer.style.maxHeight = null;
-      menuContainer.style.height = null;
+        // Close the menu
+        menuContainer.style.maxHeight = null;
+        menuContainer.style.height = null;
     } else {
-      // Open the menu
-      menuContainer.style.maxHeight = '100vh';
-      menuContainer.style.height = '100vh';
+        // Open the menu
+        menuContainer.style.maxHeight = '100vh';
+        menuContainer.style.height = '100vh';
     }
+}
+
+function onClickContact() {
+    const menuContainer = document.getElementById('menu-container');
+
+    menuContainer.style.maxHeight = null;
+    menuContainer.style.height = null;
+
 }
 
 document.querySelectorAll('.accordion-toggle').forEach(button => {
     button.addEventListener('click', () => {
         const content = button.nextElementSibling;
         const icon = button.querySelector('.accordion-icon');
-        
+
         // Toggle content visibility
         if (content.style.maxHeight) {
-          // Collapse the content
-          content.style.maxHeight = null;
-          icon.classList.remove('rotate-180'); // Rotate chevron back
+            // Collapse the content
+            content.style.maxHeight = null;
+            icon.classList.remove('rotate-180'); // Rotate chevron back
         } else {
-          // Expand the content
-          content.style.maxHeight = content.scrollHeight + 'px';
-          icon.classList.add('rotate-180'); // Rotate chevron 180 degrees
-        }  
+            // Expand the content
+            content.style.maxHeight = content.scrollHeight + 'px';
+            icon.classList.add('rotate-180'); // Rotate chevron 180 degrees
+        }
     });
 });
 
@@ -110,4 +118,3 @@ async function runStormCheck() {
 runStormCheck();
 nextImage();
 
-  
