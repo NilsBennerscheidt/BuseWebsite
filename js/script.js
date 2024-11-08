@@ -11,7 +11,7 @@ function menuClose(){
 
         menuContainer.style.maxHeight = null;
         menuContainer.style.height = null;
-    }, 500);
+    }, 450);
 }
 
 function onClickContact() {
