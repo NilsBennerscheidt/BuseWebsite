@@ -11,6 +11,16 @@ function menuToggle() {
     }
 }
 
+function menuOpen() {
+    menuToggle()
+}
+
+function menuClose(){
+    setTimeout(()=>{
+        menuToggle()
+    }, 500)
+}
+
 function onClickContact() {
     const menuContainer = document.getElementById('menu-container');
 
