@@ -16,6 +16,10 @@ Follow these steps to run the project locally:
 
 ### Steps
 
-1. Clone the repository:
+1. Clone the repository
+2. Install NPM
+   ```bash  
+    npm i
+2. Clone the repository
    ```bash
-   git clone <repository-url>
+   npm run start
