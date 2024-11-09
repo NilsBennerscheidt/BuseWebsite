@@ -38,8 +38,7 @@
       <button class="md:hidden " onclick="menuOpen()" loading="lazy"><img class="h-8 w-8"
           src="/icon/three-horizontal-lines-icon.svg" alt="Menu SVG" /> </button>
     </div>
-    <div id="menu-container"
-      class="bg-background ease-in-out z-30 transition-all duration-150 max-h-0 overflow-hidden">
+    <div id="menu-container" class="bg-background ease-in-out z-30 transition-all duration-150 max-h-0 overflow-hidden">
       <ul id="mobile-menu" class="flex flex-col px-4 pt-16 space-y-8 md:hidden text-center text-xl pointer-events-auto">
         <li onclick="menuClose()" loading="lazy"><a href="#" class="hover:text-primary">
             <p class="">Start</p>
@@ -61,7 +60,6 @@
           </a></li>
       </ul>
     </div>
-
   </nav>
 
   <!-- Background Div -->
@@ -69,15 +67,12 @@
     class="fixed top-0 left-0 w-full h-lvh bg-cover bg-center -z-10 sm:bg-[url('/img/BackgroundX2.jpg')] bg-[url('/img/BackgroundY.jpg')]">
   </div>
   <!-- Content Div -->
-  <div class="relative  mt-16">
-
+  <div class="mt-16">
     <div id="index-banner" class="relative bg-cover bg-center h-[75vh]">
       <div class="absolute inset-0 bg-black  bg-opacity-45 flex items-center justify-center">
         <div class="text-center flex flex-col justify-center h-full">
-          <!-- <h1 class="text-4xl font-bold">Buse Bedachungen</h1> -->
           <div class="h-1/6"></div>
           <img src="/logo/Buse Logo Web.svg" alt="Logo" class="h-12 md:h-36">
-
           <h5 class="mt-4 text-lg md:text-xl">Sagen Sie <b>NEIN</b> zum Dachschaden</h5>
         </div>
       </div>
@@ -100,7 +95,7 @@
       </a>
     </div>
 
-    <div class="relative h-8 bg-black bg-opacity-45" id="services">
+    <div class="h-8 bg-black bg-opacity-45" id="services">
 
     </div>
 
@@ -299,20 +294,17 @@
       </div>
     </div>
 
-    <div class="relative h-56">
-      <div class="absolute p-12 inset-0 bg-black bg-opacity-70 flex items-center justify-center">
-        <h5 class="text-xl">Seit über 105 Jahren leben wir unsere Tradition und blicken mit innovativen Ideen in die
-          Zukunft</h5>
-      </div>
+    <div class="h-56 bg-black bg-opacity-70 p-12 inset-0 flex items-center justify-center">
+      <h5 class="text-xl">Seit über 105 Jahren leben wir unsere Tradition und blicken mit innovativen Ideen in die
+        Zukunft</h5>
     </div>
-    <div class="relative h-8 bg-black bg-opacity-70" id="gallery">
-
-    </div>
+    <div class="h-8 bg-black bg-opacity-70" id="gallery"></div>
 
     <div class="bg-background p-10 sm:p-14">
       <div class="text-center">
         <h4 class="text-2xl font-bold text-primary mb-4">Galerie</h4>
-        <p class="">Um Ihnen einen Eindruck der Vielseitigkeit unserer Leistungen zu vermitteln, sehen Sie hier einige Projekte, die wir durchgefürht haben.</p>
+        <p class="">Um Ihnen einen Eindruck der Vielseitigkeit unserer Leistungen zu vermitteln, sehen Sie hier einige
+          Projekte, die wir durchgefürht haben.</p>
         <div class="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
           <div class="grid grid-cols-3 lg:grid-cols-4 gap-6 gallery-limit overflow-y-scroll" id="gallaryImages">
@@ -398,30 +390,25 @@
               <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary6_Image2.jpg"
                 alt="Eine Schieferfassade von Buse Bedachungen" onclick="openModal(15)" loading="lazy">
             </div>
-
           </div>
         </div>
 
         <!-- Modal for viewing images in detail -->
         <div id="imageModal"
           class="z-50 h-64 mt-4 md:mt-0 sm:h-80 md:fixed md:inset-0 md:bg-black md:h-full md:bg-opacity-75 flex items-center justify-center md:hidden ">
-
           <div class="relative md:h-full">
             <div class="md:mx-16 md:h-full md:flex md:items-center">
               <img id="modalImage" class="max-w-full max-h-64 sm:max-h-80 md:max-h-[90vh] object-contain rounded-lg">
             </div>
-
             <button class="hidden md:block absolute top-4 right-4 rounded-full py-1 font-semibold"
               onclick="closeModal()" loading="lazy"><img class="h-8 w-8" src="/icon/math-multiplication-icon.svg"
                 alt="My Happy SVG" /></button>
-
             <!-- Previous Button -->
             <button id="prevBtn"
               class="h-full w-16 flex items-center justify-center absolute left-0 top-1/2 transform -translate-y-1/2 rounded-full py-2 font-semibold"
               onclick="prevImage()" loading="lazy">
               <img class="h-8 w-8" src="/icon/angle-circle-left-icon.svg" alt="My Happy SVG" />
             </button>
-
             <!-- Next Button -->
             <button id="nextBtn"
               class="h-full md:h-4/5 w-16 flex items-center justify-center absolute right-0 top-1/2 transform -translate-y-1/2 rounded-full  py-2 font-semibold"
@@ -429,26 +416,18 @@
               <img class="h-8 w-8" src="/icon/angle-circle-right-icon.svg" alt="My Happy SVG" />
             </button>
           </div>
-
-
         </div>
       </div>
     </div>
 
-    <div class="relative h-56">
-      <div class="absolute inset-0 bg-black bg-opacity-65 flex items-center justify-center">
-      </div>
-    </div>
-    <div class="relative h-8" id="aboutUs">
-      <div class="absolute inset-0 bg-black bg-opacity-65 flex items-center justify-center">
-      </div>
-    </div>
+    <div class="h-56 bg-black bg-opacity-65"></div>
+    <div class="bg-cover bg-center h-8 bg-black bg-opacity-65" id="contact"></div>
 
     <div class="bg-background p-10 sm:p-14">
       <div class="text-center space-y-8 flex flex-col items-center">
         <h4 class="text-center text-2xl font-bold text-primary mb-4">Über uns</h4>
 
-        <div class="flex flex-col space-y-4 items-center sm:w-10/12 md:w-3/4 lg:w-7/12 xl:w-1/2 text-justify">
+        <div class="flex flex-col space-y-4 items-center sm:w-10/12 md:w-4/5 xl:w-2/3 text-justify">
           <div class="flex flex-col-reverse sm:flex-row items-center sm:space-x-4">
             <p class="sm:m-4 mt-4 w-full">
               Im Jahr 1919 hat Josef Buse den Grundstein für das gelegt, was wir heute als Dachdeckerbetrieb Buse
@@ -500,11 +479,8 @@
       </div>
     </div>
 
-    <div class="relative bg-cover bg-center h-56 p-6">
-      <div class="absolute inset-0 bg-black bg-opacity-65 flex items-center justify-center"></div>
-    </div>
-    <div class="relative bg-cover bg-center h-8 bg-black bg-opacity-65 " id="contact"></div>
-
+    <div class="h-56 bg-black bg-opacity-65"></div>
+    <div class="bg-cover bg-center h-8 bg-black bg-opacity-65" id="contact"></div>
 
     <div class="bg-background p-10 sm:p-14">
       <div class="text-center space-y-8 md:w-3/4 md:mx-auto ">
@@ -532,7 +508,6 @@
           </div>
 
           <div class="text-center space-y-2 ">
-
             <div>
               <a
                 href="mailto:buse-bedachungen@web.de?subject=Anfrage&body=Vielen%20Dank%20f%C3%BCr%20Ihr%20Interesse%21%0A%0ABitte%20vergesen%20Sie%20nicht%20-%20wenn%20m%C3%B6glich%20-%20Schadensbilder%20als%20Anhang%20und%20eine%20kurze%20Beschreibung%20des%20Schadens%20mitzusenden.%20">
@@ -544,7 +519,6 @@
                   </p>
                 </p>
               </a>
-
             </div>
 
             <div>
@@ -571,19 +545,15 @@
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
-    <div class="relative bg-cover bg-center h-56 p-6">
-      <div class="absolute inset-0 bg-black bg-opacity-65 flex items-center justify-center"></div>
-    </div>
-    <div class="relative bg-cover bg-black bg-opacity-65 bg-center h-8 p-6" id="carrer">
-    </div>
+    <div class="h-56 bg-black bg-opacity-65"></div>
+    <div class="bg-cover bg-center h-8 bg-black bg-opacity-65 " id="contact"></div>
 
     <div class="bg-background p-10 sm:p-14">
-      <div class="text-center space-y-8 md:w-4/5 lg:w-3/4 md:mx-auto xl:w-1/2 ">
+      <div class="text-center space-y-8 md:mx-auto md:w-4/5  xl:w-2/3">
         <h4 class="text-2xl font-bold text-primary ">Karriere</h4>
         <div class="text-sm flex flex-col items-start sm:flex-row justify-around space-y-8 sm:space-y-0">
           <div class="flex flex-col items-center">
@@ -603,9 +573,11 @@
             <p class="text-justify mt-4 sm:ml-2">
               Du hast handwerkliches Geschick, keine Lust auf Büroarbeit und auch keine Höhenangst?
               Dann könnte Dachdecker Deine Berufung sein!
-              Bei uns lernst Du alles rund um die Dachdeckerei – von der Praxis auf der Baustelle bis zum theoretischen Know-how.
+              Bei uns lernst Du alles rund um die Dachdeckerei – von der Praxis auf der Baustelle bis zum theoretischen
+              Know-how.
               Wir wollen, dass Du möglicht viel bei uns lernst und unterstützen Dich dabei, wo wir nur können.
-              Wenn Du Lust auf eine Ausbildung hast, bei der Du im Freien arbeiten kannst und Dein handwerkliches Talent unter Beweis stellen möchtest, freuen wir uns auf Dich!
+              Wenn Du Lust auf eine Ausbildung hast, bei der Du im Freien arbeiten kannst und Dein handwerkliches Talent
+              unter Beweis stellen möchtest, freuen wir uns auf Dich!
             </p>
           </div>
         </div>
