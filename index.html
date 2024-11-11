@@ -9,7 +9,7 @@
   <meta property="og:title" content="Buse Bedachungen – Dachdecker in Datteln" />
   <meta property="og:description"
     content="Professionelle Dacharbeiten, Balkon und Sturmschaden-Notdienst in Datteln." />
-  <meta property="og:image" content="https://buse-bedachungen.de/img/teamfoto.jpg" />
+  <meta property="og:image" content="https://buse-bedachungen.de/img/BuseLogoWeb.svg" />
   <meta property="og:url" content="https://buse-bedachungen.de" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -26,12 +26,13 @@ Found something wrong or need a site?
 Contact me via github: https://github.com/NilsBennerscheidt
 
 -->
+
 <body class="text-text">
   <nav class="shadow fixed top-0 z-10 w-full">
     <div class="bg-background w-full p-4 flex justify-between items-center">
       <div class="w-full xl:mx-16 flex justify-between items-center">
         <a id="logo-container" href="#" class="text-lg font-bold text-primary">
-          <img src="/logo/BuseLogoWeb.svg" alt="Logo" class="h-8">
+          <img src="/logo/BuseLogoWeb.svg" alt="Buse Bedachungen Logo" class="h-8" loading="lazy">
         </a>
         <ul class="hidden md:flex space-x-6">
           <li><a href="#" class=" hover:text-primary">Start</a></li>
@@ -42,8 +43,8 @@ Contact me via github: https://github.com/NilsBennerscheidt
           <li><a href="#carrer" class=" hover:text-primary">Karriere</a></li>
         </ul>
       </div>
-      <button class="md:hidden " onclick="menuOpen()" loading="lazy"><img class="h-8 w-8"
-          src="/icon/three-horizontal-lines-icon.svg" alt="Menu SVG" /> </button>
+      <button class="md:hidden " onclick="menuOpen()"><img class="h-8 w-8" src="/icon/three-horizontal-lines-icon.svg"
+          alt="Menu SVG" loading="lazy" /> </button>
     </div>
     <div id="menu-container" class="bg-background ease-in-out z-30 transition-all duration-150 max-h-0 overflow-hidden">
       <ul id="mobile-menu" class="flex flex-col px-4 pt-16 space-y-8 md:hidden text-center text-xl pointer-events-auto">
@@ -71,7 +72,8 @@ Contact me via github: https://github.com/NilsBennerscheidt
 
   <!-- Background Div -->
   <div
-    class="fixed top-0 left-0 w-full h-lvh bg-cover bg-center -z-10 sm:bg-[url('/img/BackgroundX2.jpg')] bg-[url('/img/BackgroundY.jpg')]">
+    class="fixed top-0 left-0 w-full h-lvh bg-cover bg-center -z-10 sm:bg-[url('/img/BackgroundX2.jpg')] bg-[url('/img/BackgroundY.jpg')]"
+    loading="lazy">
   </div>
   <!-- Content Div -->
   <div class="mt-16">
@@ -79,16 +81,15 @@ Contact me via github: https://github.com/NilsBennerscheidt
       <div class="absolute inset-0 bg-black  bg-opacity-45 flex items-center justify-center">
         <div class="text-center flex flex-col justify-center h-full">
           <div class="h-1/6"></div>
-          <!-- <img src="/logo/BuseLogo2.png" alt="Logo" class="h-auto mx-8 md:h-52"> -->
-          <img src="/logo/BuseLogoWhite.png" alt="Logo" class="h-auto mx-8 md:h-36"">
-          <h5 class="mt-4 text-lg md:text-xl">Sagen Sie <b>NEIN</b> zum Dachschaden</h5>
+          <img src="/logo/Bild1.png" alt="logo weiß" class="h-auto mx-8 md:h-36" loading="eager">
+          <h3 class="mt-4 text-lg md:text-xl">Sagen Sie <b>NEIN</b> zum Dachschaden</h3>
         </div>
       </div>
     </div>
 
     <div id="stormBanner"
-      class="hidden relativ sm:fixed w-full sm:w-2/5 p-4 right-0 z-40 bottom-20 skew-y-0 sm:skew-y-3 bg-primary sm:shadow-[5px_5px_15px_5px_rgba(0,0,0,1)] text-text font-medium">
-      <h2 class="text-xl font-semibold">Hat der letze Sturm ihnen das Dach vom Kopf geweht?</h2>
+      class="hidden relativ sm:fixed w-full sm:w-2/5 p-4 right-0 z-40 bottom-20  bg-primary sm:shadow-[5px_5px_15px_5px_rgba(0,0,0,1)] text-text font-medium">
+      <h1 class="text-xl font-semibold">Hat der letze Sturm ihnen das Dach vom Kopf geweht?</h1>
       <a class="hover:underline"
         href="mailto:buse-bedachungen@web.de?subject=Sturmschaden%20-%20Name%20einfügen&body=Hallo%2C%0A%0ASchadensbeschreibung%20einfügen.%0A%0ABitte%20fügen%20Sie%20auch%20die%20Bilder%20ein.">
         <p id="storm-resuwlt">Schicken sie uns eine Mail und wir melden uns!</p>
@@ -99,14 +100,14 @@ Contact me via github: https://github.com/NilsBennerscheidt
       class="fixed rounded-full left-4 sm:left-8 bottom-4 sm:bottom-8 z-20 bg-primary border-solid border-[6px] border-red-900">
       <a href="#contact" onclick="onClickContact()" class="sm:flex items-center">
         <img class="h-14 w-14 sm:h-12 sm:w-12 m-2 sm:mx-2  " src="/icon/phone.svg" alt="Menu SVG" />
-        <h2 class="hidden sm:block text-2xl mb-1 font-medium text-center sm:mr-6">Kontakt</h2>
+        <h1 class="hidden sm:block text-2xl mb-1 font-medium text-center sm:mr-6">Kontakt</h1>
       </a>
     </div>
     <div class="h-8 bg-black bg-opacity-45" id="services"></div>
 
     <div class="bg-background p-10 sm:p-14">
       <div>
-        <h2 class="text-center text-2xl font-bold text-primary mb-4">Leistungen</h2>
+        <h1 class="text-center text-2xl font-bold text-primary mb-4">Leistungen</h1>
         <div class="flex flex-col flex-wrap justify-start sm:hidden space-y-4">
           <div>
             <button class="text-xl font-bold w-full text-left accordion-toggle flex justify-between items-center">
@@ -242,38 +243,38 @@ Contact me via github: https://github.com/NilsBennerscheidt
         <div
           class="hidden sm:flex sm:text-center lg:w-4/5 md:mx-auto  flex-col sm:flex-row flex-wrap justify-start sm:justify-center">
           <div class="w-full sm:w-1/2 lg:w-1/4  p-4">
-            <h5 class="text-xl font-bold">Steildach</h5>
+            <h3 class="text-xl font-bold">Steildach</h3>
             <p class="mt-2 ">Schützen Sie Ihr Zuhause mit einem stilvollen und funktionalen Steildach –
               ideal für Neubau
               und Sanierung!</p>
           </div>
 
           <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-            <h5 class="text-xl font-bold  ">Flachdach</h5>
+            <h3 class="text-xl font-bold  ">Flachdach</h3>
             <p class="mt-2 ">Die perfekte Lösung für moderne Architektur und funktionale Nutzung!</p>
           </div>
 
           <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-            <h5 class="text-xl font-bold  ">Dachbegrünungen</h5>
+            <h3 class="text-xl font-bold  ">Dachbegrünungen</h3>
             <p class="mt-2 ">
               Verwandeln sie ihr Dach in eine moderne, grüne Oase die ihr Hausklima aufwertet!</p>
           </div>
 
           <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-            <h5 class="text-xl font-bold  ">Fassaden</h5>
+            <h3 class="text-xl font-bold  ">Fassaden</h3>
             <p class="mt-2 ">Verleihen Sie Ihrem Gebäude mit hochwertigen Fassaden eine beeindruckende
               Optik und Schutz vor Witterungseinflüssen!</p>
           </div>
 
           <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-            <h5 class="text-xl font-bold  ">Balkone und Dachterassen</h5>
+            <h3 class="text-xl font-bold  ">Balkone und Dachterassen</h3>
             <p class="mt-2 ">Abends die Sonne auf ihrem Balkon oder Terasse die Sonne genießen? Zusammen
               mit unseren
               Partnern bauen wir ihren Traumbalkon.</p>
           </div>
 
           <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-            <h5 class="text-xl font-bold  ">PV-Anlagen</h5>
+            <h3 class="text-xl font-bold  ">PV-Anlagen</h3>
             <p class="mt-2 ">
               Ihre Photovoltaikanlage installieren wir sowohl auf Steil- als auch auf Flachdächern. Zusammen mit
               unseren Partnern sorgen wir zudem für den Elektroanschluss.
@@ -284,14 +285,14 @@ Contact me via github: https://github.com/NilsBennerscheidt
           </div>
 
           <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-            <h5 class="text-xl font-bold   ">Reparatur und Wartung</h5>
+            <h3 class="text-xl font-bold   ">Reparatur und Wartung</h3>
             <p class="mt-2 ">Sichern Sie die Langlebigkeit Ihres Daches mit professioneller Reparatur und
               Wartung – für
               Schutz und Sicherheit, die bleibt!</p>
           </div>
 
           <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
-            <h5 class="text-xl font-bold  ">Sturmschäden Notdienst</h5>
+            <h3 class="text-xl font-bold  ">Sturmschäden Notdienst</h3>
             <p class="mt-2 ">Hat der letzte Sturm mal wieder das Dach vom Kopf geweht? Wir helfen - ruf uns
               an!</p>
           </div>
@@ -300,14 +301,14 @@ Contact me via github: https://github.com/NilsBennerscheidt
     </div>
 
     <div class="h-56 bg-black bg-opacity-70 p-12 inset-0 flex items-center justify-center">
-      <h5 class="text-xl">Seit über 105 Jahren leben wir unsere Tradition und blicken mit innovativen Ideen in die
-        Zukunft</h5>
+      <h3 class="text-xl">Seit über 105 Jahren leben wir unsere Tradition und blicken mit innovativen Ideen in die
+        Zukunft</h3>
     </div>
     <div class="h-8 bg-black bg-opacity-70" id="gallery"></div>
 
     <div class="bg-background p-10 sm:p-14">
       <div class="text-center">
-        <h4 class="text-2xl font-bold text-primary mb-4">Galerie</h4>
+        <h2 class="text-2xl font-bold text-primary mb-4">Galerie</h2>
         <p class="">Um Ihnen einen Eindruck der Vielseitigkeit unserer Leistungen zu vermitteln, sehen Sie hier einige
           Projekte, die wir durchgefürht haben.</p>
         <div class="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -316,17 +317,17 @@ Contact me via github: https://github.com/NilsBennerscheidt
 
             <div class="relative group">
               <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary1_Image1.jpg"
-                alt="Image 1" onclick="openModal(0)">
+                alt="Ein Dach von vorne, gedeckt von Buse Bedachungen" onclick="openModal(0)" loading="lazy">
             </div>
 
             <div class="relative group">
               <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary1_Image2.jpg"
-                alt="Image 1" onclick="openModal(1)">
+                alt="Ein Dach von derSeite, gedeckt von Buse Bedachungen" onclick="openModal(1)" loading="lazy">
             </div>
 
             <div class="relative group">
               <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary1_Image3.jpg"
-                alt="Image 1" onclick="openModal(2)">
+                alt="Ein Dach von der Seite, gedeckt von Buse Bedachungen" onclick="openModal(2)" loading="lazy">
             </div>
 
             <div class="relative group">
@@ -364,27 +365,27 @@ Contact me via github: https://github.com/NilsBennerscheidt
 
             <div class="relative group">
               <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary4_Image1.jpg"
-                alt="Image 1" onclick="openModal(9)" loading="lazy">
+                alt="Ein Spitzdach mit Erker, gedeckt von Buse Bedachungen" onclick="openModal(9)" loading="lazy">
             </div>
 
             <div class="relative group">
               <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary4_Image2.jpg"
-                alt="Image 1" onclick="openModal(10)" loading="lazy">
+                alt="Ein Spitzdach mit Erker, gedeckt von Buse Bedachungen" onclick="openModal(10)" loading="lazy">
             </div>
 
             <div class="relative group">
               <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary4_Image3.jpg"
-                alt="Image 1" onclick="openModal(11)" loading="lazy">
+                alt="Ein Spitzdach mit Erker, gedeckt von Buse Bedachungen" onclick="openModal(11)" loading="lazy">
             </div>
 
             <div class="relative group">
               <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary5_Image1.jpg"
-                alt="Image 1" onclick="openModal(12)" loading="lazy">
+                alt="Das Dach des Dattelner Stadtmuseums" onclick="openModal(12)" loading="lazy">
             </div>
 
             <div class="relative group">
               <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary5_Image2.jpg"
-                alt="Image 1" onclick="openModal(13)" loading="lazy">
+                alt="Das Dach des Dattelner Stadtmuseums" onclick="openModal(13)" loading="lazy">
             </div>
             <div class="relative group">
               <img class="w-full h-64 object-cover rounded-lg shadow-md cursor-pointer" src="./img/Gallary6_Image1.jpg"
@@ -398,27 +399,27 @@ Contact me via github: https://github.com/NilsBennerscheidt
           </div>
         </div>
 
-        <!-- Modal for viewing images in detail -->
         <div id="imageModal"
           class="z-50 h-64 mt-4 md:mt-0 sm:h-80 md:fixed md:inset-0 md:bg-black md:h-full md:bg-opacity-75 flex items-center justify-center md:hidden ">
           <div class="relative md:h-full">
             <div class="md:mx-16 md:h-full md:flex md:items-center">
-              <img id="modalImage" class="max-w-full max-h-64 sm:max-h-80 md:max-h-[90vh] object-contain rounded-lg">
+              <img id="modalImage" class="max-w-full max-h-64 sm:max-h-80 md:max-h-[90vh] object-contain rounded-lg"
+                alt="Imagecontainer">
             </div>
             <button class="hidden md:block absolute top-4 right-4 rounded-full py-1 font-semibold"
-              onclick="closeModal()" loading="lazy"><img class="h-8 w-8" src="/icon/math-multiplication-icon.svg"
-                alt="My Happy SVG" /></button>
+              onclick="closeModal()"><img class="h-8 w-8" src="/icon/math-multiplication-icon.svg"
+                alt="Galerie schließen" loading="lazy"/></button>
             <!-- Previous Button -->
             <button id="prevBtn"
               class="h-full w-16 flex items-center justify-center absolute left-0 top-1/2 transform -translate-y-1/2 rounded-full py-2 font-semibold"
-              onclick="prevImage()" loading="lazy">
-              <img class="h-8 w-8" src="/icon/angle-circle-left-icon.svg" alt="My Happy SVG" />
+              onclick="prevImage()" >
+              <img class="h-8 w-8" src="/icon/angle-circle-left-icon.svg" alt="Previous" loading="lazy"/>
             </button>
             <!-- Next Button -->
             <button id="nextBtn"
               class="h-full md:h-4/5 w-16 flex items-center justify-center absolute right-0 top-1/2 transform -translate-y-1/2 rounded-full  py-2 font-semibold"
-              onclick="nextImage()" loading="lazy">
-              <img class="h-8 w-8" src="/icon/angle-circle-right-icon.svg" alt="My Happy SVG" />
+              onclick="nextImage()">
+              <img class="h-8 w-8" src="/icon/angle-circle-right-icon.svg" alt="Next" loading="lazy" />
             </button>
           </div>
         </div>
@@ -430,7 +431,7 @@ Contact me via github: https://github.com/NilsBennerscheidt
 
     <div class="bg-background p-10 sm:p-14">
       <div class="text-center space-y-8 flex flex-col items-center">
-        <h4 class="text-center text-2xl font-bold text-primary mb-4">Über uns</h4>
+        <h2 class="text-center text-2xl font-bold text-primary mb-4">Über uns</h2>
 
         <div class="flex flex-col space-y-4 items-center sm:w-10/12 md:w-4/5 xl:w-2/3 text-justify">
           <div class="flex flex-col-reverse sm:flex-row items-center sm:space-x-4">
@@ -440,14 +441,15 @@ Contact me via github: https://github.com/NilsBennerscheidt
               – Werte, die bis heute fest in unserer Firmenkultur verankert sind.
             </p>
             <div>
-              <img src="./img/UrOpa.jpg" alt="Josef Buse. Der Gründer der Firma und "
-                class="w-44 sm:w-56 h-auto mt-4 sm:mt-0">
+              <img src="./img/UrOpa.jpg" alt="Josef Buse. Der Gründer der Firma und Vater von Josef Buse Jr."
+                class="w-44 sm:w-56 h-auto mt-4 sm:mt-0" loading="lazy">
               <p class="text-center text-xs mt-2">Josef Buse</p>
             </div>
           </div>
           <div class="flex flex-col  sm:flex-row items-center space-y-4 sm:space-x-4 sm:mt-0">
             <div>
-              <img src="./img/JosefBuse.jpg" alt="" class="w-44 sm:w-56 h-auto mt-4 sm:mt-0">
+              <img src="./img/JosefBuse.jpg" alt="Josed Buse Junior. Sohn des Gründers und Vater von Michael"
+                class="w-44 sm:w-56 h-auto mt-4 sm:mt-0" loading="lazy">
               <p class="text-center text-xs mt-2">Josef Buse Jr.</p>
             </div>
             <p class="sm:m-4 w-full">
@@ -465,13 +467,15 @@ Contact me via github: https://github.com/NilsBennerscheidt
               des Unternehmens, um die Tradition mit modernen Standards zu verbinden.
             </p>
             <div>
-              <img src="./img/MichaelBuse.jpg" alt="Das Team der Firma" class="w-44 sm:w-56 h-auto mt-4 sm:mt-0">
+              <img src="./img/MichaelBuse.jpg" alt="Michael Buse. Vater von Felix. Aktueller Chef"
+                class="w-44 sm:w-56 h-auto mt-4 sm:mt-0" loading="lazy">
               <p class="text-center text-xs mt-2">Michael Buse</p>
             </div>
           </div>
           <div class="flex flex-col  sm:flex-row items-center space-y-4 sm:space-x-4 sm:mt-0">
             <div>
-              <img src="./img/FelixBuse.jpg" alt="" class="w-44 sm:w-56 h-auto mt-4 sm:mt-0">
+              <img src="./img/FelixBuse.jpg" alt="Felix Buse. Ur-Enkel des Gründers "
+                class="w-44 sm:w-56 h-auto mt-4 sm:mt-0" loading="lazy">
               <p class="text-center text-xs mt-2">Felix Buse</p>
             </div>
             <p class="sm:m-4 w-full">
@@ -489,11 +493,11 @@ Contact me via github: https://github.com/NilsBennerscheidt
 
     <div class="bg-background p-10 sm:p-14">
       <div class="text-center space-y-8 md:w-3/4 md:mx-auto ">
-        <h4 class="text-2xl font-bold text-primary mb-4">Kontakt</h4>
+        <h2 class="text-2xl font-bold text-primary mb-4">Kontakt</h2>
         <div
           class="flex flex-col lg:items-center sm:items-start sm:flex-row justify-around pt-4 space-y-8 sm:space-y-0">
           <div class="text-center items-center">
-            <h5 class=" text-xl font-bold">Öffnungszeiten</h5>
+            <h3 class=" text-xl font-bold">Öffnungszeiten</h3>
             <div class="flex  space-x-2 justify-center pr-4 mt-2">
               <p class="text-right">
                 Montag:<br />
@@ -559,10 +563,10 @@ Contact me via github: https://github.com/NilsBennerscheidt
 
     <div class="bg-background p-10 sm:p-14">
       <div class="text-center space-y-8 md:mx-auto md:w-4/5  xl:w-2/3">
-        <h4 class="text-2xl font-bold text-primary ">Karriere</h4>
+        <h2 class="text-2xl font-bold text-primary ">Karriere</h2>
         <div class="text-sm flex flex-col items-start sm:flex-row justify-around space-y-8 sm:space-y-0">
           <div class="flex flex-col items-center">
-            <h5 class=" text-xl font-bold">Dachdecker Geselle/-in (m/w/d)</h5>
+            <h3 class=" text-xl font-bold">Dachdecker Geselle/-in (m/w/d)</h3>
             <p class="text-justify mt-4 sm:mr-2">
               Du bist ausgelernte(r) Dachdecker/in (m/w/d) und suchst nach einem tollen neuen Team?
               Dann bist Du bei uns genau richtig! Wir sind ein familiärer Handwerksbetrieb mit einem jungen, dynamischen
@@ -574,7 +578,7 @@ Contact me via github: https://github.com/NilsBennerscheidt
             </p>
           </div>
           <div class="flex flex-col items-center">
-            <h5 class=" text-xl font-bold">Ausbildung zum Dachdecker/-in (m/w/d)</h5>
+            <h3 class=" text-xl font-bold">Ausbildung zum Dachdecker/-in (m/w/d)</h3>
             <p class="text-justify mt-4 sm:ml-2">
               Du hast handwerkliches Geschick, keine Lust auf Büroarbeit und auch keine Höhenangst?
               Dann könnte Dachdecker Deine Berufung sein!
@@ -606,7 +610,7 @@ Contact me via github: https://github.com/NilsBennerscheidt
       <a href="./datenschutz.html" class="hover:underline ml-1"> Datenschutz</a>
     </div>
     <div class="text-center flex items-center justify-center bg-background h-16">
-      <a href="https://github.com/NilsBennerscheidt"  target="_blank" class="hover:underline">Made by @bennerscheidt</a>
+      <a href="https://github.com/NilsBennerscheidt" target="_blank" class="hover:underline">Made by @bennerscheidt</a>
     </div>
   </footer>
 </body>
