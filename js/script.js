@@ -83,11 +83,9 @@ function getStormInfo() {
             }
 
             if (windFasterThen(p_JSONResponse.daily.wind_speed_10m_max, stormWindSpeed) || windFasterThen(p_JSONResponse.daily.wind_gusts_10m_max, stormWindSpeed)) {
-                console.log("Sturm");
                 const stormResult = document.getElementById("stormBanner");
                 stormResult.classList.toggle('hidden');
             }
-
         })
     })
 }
