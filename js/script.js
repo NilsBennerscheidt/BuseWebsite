@@ -1,3 +1,6 @@
+/**
+ * Open the menu
+ */
 function menuOpen() {
     const menuContainer = document.getElementById('menu-container');
 
@@ -5,45 +8,35 @@ function menuOpen() {
     menuContainer.style.height = '100vh';
 }
 
-function menuClose(){
-    setTimeout(()=>{
-        const menuContainer = document.getElementById('menu-container');
-
-        menuContainer.style.maxHeight = null;
-        menuContainer.style.height = null;
+/**
+ * delay before closing the menu
+ */
+function menuDelayClose() {
+    setTimeout(() => {
+        closeMenu();
     }, 250);
 }
 
-function onClickContact() {
+/**
+ * close the menu
+ */
+function closeMenu() {
     const menuContainer = document.getElementById('menu-container');
 
     menuContainer.style.maxHeight = null;
     menuContainer.style.height = null;
-
 }
 
-document.querySelectorAll('.accordion-toggle').forEach(button => {
-    button.addEventListener('click', () => {
-        const content = button.nextElementSibling;
-        const icon = button.querySelector('.accordion-icon');
-
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            icon.classList.remove('rotate-180'); // Rotate chevron back
-        } else {
-            content.style.maxHeight = content.scrollHeight + 'px';
-            icon.classList.add('rotate-180'); // Rotate chevron 180 degrees
-        }
-    });
-});
+function onClickContact() {
+    closeMenu();
+}
 
 const images = document.querySelectorAll('#gallaryImages img');
 let currentIndex = 0;
 
 function openModal(index) {
-    currentIndex = index;
-    console.log("currentIndex", currentIndex)
     const modalImage = document.getElementById('modalImage');
+    currentIndex = index;
     modalImage.src = images[currentIndex].src;
     document.getElementById('imageModal').classList.remove('md:hidden');
 }
@@ -74,45 +67,51 @@ function nextImage() {
     modalImage.src = images[currentIndex].src;
 }
 
-const API_KEY = 'ca45f192bcb043d1be7182315240710'; // Replace with your WeatherAPI key
-const LATITUDE = 51.6595;  // Latitude for Berlin
-const LONGITUDE = 7.3465; // Longitude for Berlin
+/**
+ * Storm API
+ */
+const latitude = 51.6595;
+const longitude = 7.3465;
 
-async function getWeatherData(apiKey) {
-    const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${LATITUDE},${LONGITUDE}&days=10&alerts=yes&lang=de`;
+function getStormInfo() {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&daily=rain_sum,wind_speed_10m_max,wind_gusts_10m_max&timezone=Europe%2FBerlin&past_days=14&forecast_days=3`
+    fetch(url).then((response) => {
+        response.json().then((p_JSONResponse) => {
+            const stormWindSpeed = 75
+            const windFasterThen = (p_Data, p_Speed) => {
+                return p_Data.some(element => element > p_Speed)
+            }
 
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Error fetching weather data:", error);
-    }
+            if (windFasterThen(p_JSONResponse.daily.wind_speed_10m_max, stormWindSpeed) || windFasterThen(p_JSONResponse.daily.wind_gusts_10m_max, stormWindSpeed)) {
+                console.log("Sturm");
+                const stormResult = document.getElementById("stormBanner");
+                stormResult.classList.toggle('hidden');
+            }
+
+        })
+    })
 }
 
-function checkStorms(weatherData) {
-    const stormResult = document.getElementById("storm-result");
-    const forecastDays = weatherData.forecast.forecastday;
-    let stormFound = false;
+document.querySelectorAll('.accordion-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.accordion-icon');
 
-    forecastDays.forEach(day => {
-        if (day.day.condition.text.includes('Thunderstorm')) {
-            const date = new Date(day.date).toLocaleDateString('de-DE');
-            stormFound = true;
-            stormResult.textContent = `Ein Sturm wurde für den ${date} gefunden!`;
-            stormResult.classList.toggle('hidden');
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            icon.classList.remove('rotate-180'); // Rotate chevron back
+        } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            icon.classList.add('rotate-180'); // Rotate chevron 180 degrees
         }
     });
+});
 
-}
-
-async function runStormCheck() {
-    const weatherData = await getWeatherData(API_KEY);
-    if (weatherData) {
-        checkStorms(weatherData);
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' || event.key === 'Esc') {
+        closeModal();
     }
-}
+});
 
-runStormCheck();
 nextImage();
-
+getStormInfo();
