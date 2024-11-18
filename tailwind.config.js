@@ -15,6 +15,9 @@ module.exports = {
       backgroundColor: theme => ({
         ...theme('colors'), // This will include your custom colors in backgroundColor
       }),
+      textDecorationColor: {
+        shadow: '0 0 5px #00f, 0 0 10px #00f, 0 0 20px #00f;'
+      }
     },
   },
   plugins: [],

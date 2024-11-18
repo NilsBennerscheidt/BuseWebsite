@@ -27,7 +27,22 @@ function closeMenu() {
     menuContainer.style.height = null;
 }
 
+
+
 function onClickContact() {
+    const contactElementsToGlow = Array.from(document.getElementsByClassName("addGlow"))
+    contactElementsToGlow.forEach(element => {
+        element.style.textShadow = '0 0 5px #d90516, 0 0 10px #d90516, 0 0 20px #d90516';
+        element.classList.add('text-text')
+    });
+    
+
+    setTimeout(() => {
+        contactElementsToGlow.forEach(element => {
+            element.style.textShadow = ''
+            element.classList.remove('text-text')
+        });
+    }, 1500);
     closeMenu();
 }
 
@@ -81,9 +96,11 @@ function getStormInfo() {
             const windFasterThen = (p_Data, p_Speed) => {
                 return p_Data.some(element => element > p_Speed)
             }
-
+            
             if (windFasterThen(p_JSONResponse.daily.wind_speed_10m_max, stormWindSpeed) || windFasterThen(p_JSONResponse.daily.wind_gusts_10m_max, stormWindSpeed)) {
                 const stormResult = document.getElementById("stormBanner");
+                
+                stormResult.nextElementSibling.classList.toggle('hidden')
                 stormResult.classList.toggle('hidden');
             }
         })

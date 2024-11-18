@@ -77,7 +77,7 @@ Contact me via github: https://github.com/NilsBennerscheidt
   </div>
   <!-- Content Div -->
   <div class="mt-16">
-    <div id="index-banner" class="relative bg-cover bg-center h-[75vh]">
+    <div id="index-banner" class="relative bg-cover bg-center h-[65vh] sm:h-[75vh]">
       <div class="absolute inset-0 bg-black  bg-opacity-45 flex items-center justify-center">
         <div class="text-center flex flex-col justify-center h-full">
           <div class="h-1/6"></div>
@@ -87,14 +87,6 @@ Contact me via github: https://github.com/NilsBennerscheidt
       </div>
     </div>
 
-    <div id="stormBanner"
-      class="hidden relativ sm:fixed w-full sm:w-2/5 p-4 right-0 z-40 bottom-20  bg-primary sm:shadow-[5px_5px_15px_5px_rgba(0,0,0,1)] text-text font-medium">
-      <h1 class="text-xl font-semibold">Hat der letze Sturm ihnen das Dach vom Kopf geweht?</h1>
-      <a class="hover:underline"
-        href="mailto:buse-bedachungen@web.de?subject=Sturmschaden%20-%20Name%20einfügen&body=Hallo%2C%0A%0ASchadensbeschreibung%20einfügen.%0A%0ABitte%20fügen%20Sie%20auch%20die%20Bilder%20ein.">
-        <p id="storm-resuwlt">Schicken sie uns eine Mail und wir melden uns!</p>
-      </a>
-    </div>
 
     <div
       class="fixed rounded-full left-4 sm:left-8 bottom-4 sm:bottom-8 z-20 bg-primary border-solid border-[6px] border-red-900">
@@ -103,7 +95,23 @@ Contact me via github: https://github.com/NilsBennerscheidt
         <h1 class="hidden sm:block text-2xl mb-1 font-medium text-center sm:mr-6">Kontakt</h1>
       </a>
     </div>
-    <div class="h-8 bg-black bg-opacity-45" id="services"></div>
+
+    <div>
+      <div id="stormBanner"
+        class="flex flex-row items-center justify-between hidden relativ md:fixed w-full md:w-2/5 lg:w-2/6 p-4 right-0 z-40 bottom-28  bg-primary sm:shadow-[5px_5px_15px_5px_rgba(0,0,0,1)] text-text font-medium">
+        <div>
+          <h1 class="text-xl font-semibold">Hat der letze Sturm ihnen das Dach vom Kopf geweht?</h1>
+          <a class="hover:underline"
+            href="mailto:buse-bedachungen@web.de?subject=Sturmschaden%20-%20Name%20einfügen&body=Hallo%2C%0A%0ASchadensbeschreibung%20einfügen.%0A%0ABitte%20fügen%20Sie%20auch%20die%20Bilder%20ein.">
+            <p id="storm-resuwlt" class="text-base">Kontaktieren sie uns bei Sturmschäden</p>
+          </a>
+        </div>
+        <a href="#contact" onclick="onClickContact()" class="md:mx-2">
+          <img class="h-32 w-32 sm:h-24 sm:w-24" src="/icon/phone.svg" alt="Menu SVG" />
+        </a>
+      </div>
+      <div class="h-8 bg-black bg-opacity-45" id="services"></div>
+    </div>
 
     <div class="bg-background p-10 sm:p-14">
       <div>
@@ -408,12 +416,12 @@ Contact me via github: https://github.com/NilsBennerscheidt
             </div>
             <button class="hidden md:block absolute top-4 right-4 rounded-full py-1 font-semibold"
               onclick="closeModal()"><img class="h-8 w-8" src="/icon/math-multiplication-icon.svg"
-                alt="Galerie schließen" loading="lazy"/></button>
+                alt="Galerie schließen" loading="lazy" /></button>
             <!-- Previous Button -->
             <button id="prevBtn"
               class="h-full w-16 flex items-center justify-center absolute left-0 top-1/2 transform -translate-y-1/2 rounded-full py-2 font-semibold"
-              onclick="prevImage()" >
-              <img class="h-8 w-8" src="/icon/angle-circle-left-icon.svg" alt="Previous" loading="lazy"/>
+              onclick="prevImage()">
+              <img class="h-8 w-8" src="/icon/angle-circle-left-icon.svg" alt="Previous" loading="lazy" />
             </button>
             <!-- Next Button -->
             <button id="nextBtn"
@@ -527,14 +535,15 @@ Contact me via github: https://github.com/NilsBennerscheidt
             </div>
           </div>
 
-          <div class="text-center space-y-2 ">
+          <div class="text-center space-y-2  shadow-glow" id="contactDetails">
             <div>
               <a
                 href="mailto:buse-bedachungen@web.de?subject=Anfrage&body=Vielen%20Dank%20f%C3%BCr%20Ihr%20Interesse%21%0A%0ABitte%20vergesen%20Sie%20nicht%20-%20wenn%20m%C3%B6glich%20-%20Schadensbilder%20als%20Anhang%20und%20eine%20kurze%20Beschreibung%20des%20Schadens%20mitzusenden.%20">
                 <p>
                   Schicken Sie uns eine E-Mail
                   <br />
-                  <p class="text-primary hover:underline">
+
+                  <p class="text-primary hover:underline addGlow">
                     buse-bedachungen@web.de
                   </p>
                 </p>
@@ -546,7 +555,7 @@ Contact me via github: https://github.com/NilsBennerscheidt
                 <p>
                   Rufen Sie uns an
                   <br />
-                  <p href="tel:02363-35045" class="text-primary hover:underline">
+                  <p href="tel:02363-35045" class="text-primary hover:underline addGlow">
                     02363-35045
                   </p>
                 </p>
